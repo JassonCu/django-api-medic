@@ -1,0 +1,99 @@
+- model: medications.category
+  pk: 1
+  fields:
+    name: "Antibiótico"
+
+- model: medications.category
+  pk: 2
+  fields:
+    name: "Analgésico"
+
+- model: medications.category
+  pk: 3
+  fields:
+    name: "Antipirético"
+
+- model: medications.category
+  pk: 4
+  fields:
+    name: "Antiséptico"
+
+- model: medications.category
+  pk: 5
+  fields:
+    name: "Antiviral"
+
+- model: medications.category
+  pk: 6
+  fields:
+    name: "Antifúngico"
+
+- model: medications.category
+  pk: 7
+  fields:
+    name: "Antipsicótico"
+
+- model: medications.category
+  pk: 8
+  fields:
+    name: "Broncodilatador"
+
+- model: medications.category
+  pk: 9
+  fields:
+    name: "Cardiovascular"
+
+- model: medications.category
+  pk: 10
+  fields:
+    name: "Diurético"
+
+- model: medications.category
+  pk: 11
+  fields:
+    name: "Hormona"
+
+- model: medications.category
+  pk: 12
+  fields:
+    name: "Inmunosupresor"
+
+- model: medications.category
+  pk: 13
+  fields:
+    name: "Laxante"
+
+- model: medications.category
+  pk: 14
+  fields:
+    name: "Relajante Muscular"
+
+- model: medications.category
+  pk: 15
+  fields:
+    name: "Narcótico"
+
+- model: medications.category
+  pk: 16
+  fields:
+    name: "Sedante"
+
+- model: medications.category
+  pk: 17
+  fields:
+    name: "Estimulante"
+
+- model: medications.category
+  pk: 18
+  fields:
+    name: "Vacunación"
+
+- model: medications.category
+  pk: 19
+  fields:
+    name: "Vitamina"
+
+- model: medications.category
+  pk: 20
+  fields:
+    name: "Otro"
