@@ -1,0 +1,20 @@
+- model: currency.currency
+  pk: 1
+  fields:
+    name: "Dolar"
+    symbol: "$"
+    code: "USD"
+
+- model: currency.currency
+  pk: 2
+  fields:
+    name: "Euro"
+    symbol: "€"
+    code: "EUR"
+
+- model: currency.currency
+  pk: 3
+  fields:
+    name: "Quetzal"
+    symbol: "Q"
+    code: "GTQ"

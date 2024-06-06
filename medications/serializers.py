@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from .models import Medication, Category
 
+
 class MedicationSerializer(serializers.ModelSerializer):
     """
     Serializer para la entidad Medication
@@ -8,6 +9,7 @@ class MedicationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Medication
         fields = '__all__'
+
 
 class MedicationCategorySerializer(serializers.ModelSerializer):
     """

@@ -96,4 +96,89 @@
 - model: medications.category
   pk: 20
   fields:
+    name: "Hipertensivo"
+
+- model: medications.category
+  pk: 21
+  fields:
+    name: "Anticolinérgicos sintéticos"
+
+- model: medications.category
+  pk: 22
+  fields:
     name: "Otro"
+
+- model: medications.category
+  pk: 23
+  fields:
+    name: "Antirreflujo"
+
+- model: medications.category
+  pk: 24
+  fields:
+    name: "Antiespasmolitico"
+
+- model: medications.category
+  pk: 25
+  fields:
+    name: "Antiamebiano"
+
+- model: medications.category
+  pk: 26
+  fields:
+    name: "Antiparasitario"
+
+- model: medications.category
+  pk: 26
+  fields:
+    name: "Antihelmíntico"
+
+- model: medications.category
+  pk: 27
+  fields:
+    name: "Antiepileptico"
+
+- model: medications.category
+  pk: 28
+  fields:
+    name: "Anticonvulsivo"
+
+- model: medications.category
+  pk: 29
+  fields:
+    name: "Antiartrítico"
+
+- model: medications.category
+  pk: 30
+  fields:
+    name: "Mucolíticos"
+
+- model: medications.category
+  pk: 31
+  fields:
+    name: "Expectorante"
+
+- model: medications.category
+  pk: 32
+  fields:
+    name: "Antagonistas de los receptores de leucotrienos"
+
+- model: medications.category
+  pk: 33
+  fields:
+    name: "Antihistamínico"
+
+- model: medications.category
+  pk: 34
+  fields:
+    name: "Descongestionante nasal"
+
+- model: medications.category
+  pk: 35
+  fields:
+    name: "Antialérgico"
+
+- model: medications.category
+  pk: 36
+  fields:
+    name: "Antiinflamatorio"
