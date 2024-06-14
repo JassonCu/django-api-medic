@@ -182,3 +182,33 @@
   pk: 36
   fields:
     name: "Antiinflamatorio"
+
+- model: medications.category
+  pk: 37
+  fields:
+    name: "Inhibidores del cotransportador de sodio-glucosa tipo 2 (SGLT2)"
+
+- model: medications.category
+  pk: 38
+  fields:
+    name: "Inhibidores de la dipeptidil peptidasa-4 (DPP-4)"
+
+- model: medications.category
+  pk: 39
+  fields:
+    name: "Biguanida"
+
+- model: medications.category
+  pk: 40
+  fields:
+    name: "Antiherpético"
+
+- model: medications.category
+  pk: 41
+  fields:
+    name: "Antiflatulento"
+
+- model: medications.category
+  pk: 42
+  fields:
+    name: "Regulador de la motilidad gastrointestinal"

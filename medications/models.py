@@ -4,6 +4,7 @@ from django.utils import timezone
 
 # Create your models here.
 
+
 class Medication(models.Model):
     """
     Modelo de datos para los medicamentos.
@@ -19,8 +20,8 @@ class Medication(models.Model):
         "Fecha de vencimiento"), null=False, blank=False)
     manufacturer = models.CharField(
         max_length=255, verbose_name=_("Fabricante"))
-    stock = models.IntegerField(verbose_name=_(
-        "Inventario"), null=False, blank=False)
+    stock = models.CharField(verbose_name=_(
+        "Inventario"), null=False, blank=False, max_length=255)
     code = models.CharField(max_length=100, unique=False, verbose_name=_(
         "Compuesto químico"), null=False, blank=False)
     unit = models.CharField(max_length=100, verbose_name=_(
@@ -38,7 +39,7 @@ class Medication(models.Model):
     updated_at = models.DateTimeField(
         auto_now=True, verbose_name=_("Fecha de actualización"))
     categories = models.ManyToManyField(
-        'Category', related_name='medications', verbose_name=_("Categorías"), blank=False, null=True)
+        'Category', related_name='medications', verbose_name=_("Categorías"), blank=False)
     presentation = models.CharField(
         max_length=100, blank=False, null=False, verbose_name=_("Presentación"))
 
@@ -46,7 +47,7 @@ class Medication(models.Model):
         return self.name
 
     class Meta:
-        ordering = ["name"]
+        ordering = ["id"]
 
 
 class Category(models.Model):
