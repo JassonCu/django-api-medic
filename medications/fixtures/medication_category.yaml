@@ -212,3 +212,48 @@
   pk: 42
   fields:
     name: "Regulador de la motilidad gastrointestinal"
+
+- model: medications.category
+  pk: 43
+  fields:
+    name: "Antianémico"
+
+- model: medications.category
+  pk: 44
+  fields:
+    name: "Enzimas digestivas"
+
+- model: medications.category
+  pk: 45
+  fields:
+    name: "Opioide"
+
+- model: medications.category
+  pk: 46
+  fields:
+    name: "Probióticos"
+
+- model: medications.category
+  pk: 47
+  fields:
+    name: "Suplementos Dietéticos"
+
+- model: medications.category
+  pk: 48
+  fields:
+    name: "Procinéticos"
+
+- model: medications.category
+  pk: 49
+  fields:
+    name: "Gastroprokinéticos"
+
+- model: medications.category
+  pk: 50
+  fields:
+    name: "Antipsicóticos Atípicos"
+
+- model: medications.category
+  pk: 51
+  fields:
+    name: "Antiprotozoario"
