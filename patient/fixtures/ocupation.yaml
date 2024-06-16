@@ -1,0 +1,509 @@
+- model: patient.ocupation
+  pk: 1
+  fields:
+    name: Médico
+
+- model: patient.ocupation
+  pk: 2
+  fields:
+    name: Enfermera
+
+- model: patient.ocupation
+  pk: 3
+  fields:
+    name: Ingeniero
+
+- model: patient.ocupation
+  pk: 4
+  fields:
+    name: Abogado
+
+- model: patient.ocupation
+  pk: 5
+  fields:
+    name: Estudiante
+
+- model: patient.ocupation
+  pk: 6
+  fields:
+    name: Profesor
+
+- model: patient.ocupation
+  pk: 7
+  fields:
+    name: Programador
+
+- model: patient.ocupation
+  pk: 8
+  fields:
+    name: Diseñador
+
+- model: patient.ocupation
+  pk: 9
+  fields:
+    name: Contador
+
+- model: patient.ocupation
+  pk: 10
+  fields:
+    name: Comerciante
+
+- model: patient.ocupation
+  pk: 11
+  fields:
+    name: Chef
+
+- model: patient.ocupation
+  pk: 12
+  fields:
+    name: Peluquero
+
+- model: patient.ocupation
+  pk: 13
+  fields:
+    name: Mecánico
+
+- model: patient.ocupation
+  pk: 14
+  fields:
+    name: Electricista
+
+- model: patient.ocupation
+  pk: 15
+  fields:
+    name: Arquitecto
+
+- model: patient.ocupation
+  pk: 16
+  fields:
+    name: Psicólogo
+
+- model: patient.ocupation
+  pk: 17
+  fields:
+    name: Fotógrafo
+
+- model: patient.ocupation
+  pk: 18
+  fields:
+    name: Periodista
+
+- model: patient.ocupation
+  pk: 19
+  fields:
+    name: Actor/Actriz
+
+- model: patient.ocupation
+  pk: 20
+  fields:
+    name: Cantante
+
+- model: patient.ocupation
+  pk: 21
+  fields:
+    name: Bailarín/Bailarina
+
+- model: patient.ocupation
+  pk: 22
+  fields:
+    name: Escritor
+
+- model: patient.ocupation
+  pk: 23
+  fields:
+    name: Policía
+
+- model: patient.ocupation
+  pk: 24
+  fields:
+    name: Bombero
+
+- model: patient.ocupation
+  pk: 25
+  fields:
+    name: Paramédico
+
+- model: patient.ocupation
+  pk: 26
+  fields:
+    name: Técnico de laboratorio
+
+- model: patient.ocupation
+  pk: 27
+  fields:
+    name: Juez
+
+- model: patient.ocupation
+  pk: 28
+  fields:
+    name: Abogado de derechos humanos
+
+- model: patient.ocupation
+  pk: 29
+  fields:
+    name: Economista
+
+- model: patient.ocupation
+  pk: 30
+  fields:
+    name: Banquero
+
+- model: patient.ocupation
+  pk: 31
+  fields:
+    name: Fontanero
+
+- model: patient.ocupation
+  pk: 32
+  fields:
+    name: Carpintero
+
+- model: patient.ocupation
+  pk: 33
+  fields:
+    name: Albañil
+
+- model: patient.ocupation
+  pk: 34
+  fields:
+    name: Agricultor
+
+- model: patient.ocupation
+  pk: 35
+  fields:
+    name: Ganadero
+
+- model: patient.ocupation
+  pk: 36
+  fields:
+    name: Florista
+
+- model: patient.ocupation
+  pk: 37
+  fields:
+    name: Veterinario
+
+- model: patient.ocupation
+  pk: 38
+  fields:
+    name: Piloto
+
+- model: patient.ocupation
+  pk: 39
+  fields:
+    name: Controlador de tráfico aéreo
+
+- model: patient.ocupation
+  pk: 40
+  fields:
+    name: Marinero
+
+- model: patient.ocupation
+  pk: 41
+  fields:
+    name: Astronauta
+
+- model: patient.ocupation
+  pk: 42
+  fields:
+    name: Geólogo
+
+- model: patient.ocupation
+  pk: 43
+  fields:
+    name: Biólogo
+
+- model: patient.ocupation
+  pk: 44
+  fields:
+    name: Químico
+
+- model: patient.ocupation
+  pk: 45
+  fields:
+    name: Físico
+
+- model: patient.ocupation
+  pk: 46
+  fields:
+    name: Astrónomo
+
+- model: patient.ocupation
+  pk: 47
+  fields:
+    name: Meteorólogo
+
+- model: patient.ocupation
+  pk: 48
+  fields:
+    name: Cartógrafo
+
+- model: patient.ocupation
+  pk: 49
+  fields:
+    name: Diseñador gráfico
+
+- model: patient.ocupation
+  pk: 50
+  fields:
+    name: Animador
+
+- model: patient.ocupation
+  pk: 51
+  fields:
+    name: Artista
+
+- model: patient.ocupation
+  pk: 52
+  fields:
+    name: Escultor
+
+- model: patient.ocupation
+  pk: 53
+  fields:
+    name: Joyero
+
+- model: patient.ocupation
+  pk: 54
+  fields:
+    name: Tatuador
+
+- model: patient.ocupation
+  pk: 55
+  fields:
+    name: Maquillador
+
+- model: patient.ocupation
+  pk: 56
+  fields:
+    name: Terapeuta
+
+- model: patient.ocupation
+  pk: 57
+  fields:
+    name: Consejero
+
+- model: patient.ocupation
+  pk: 58
+  fields:
+    name: Trabajador social
+
+- model: patient.ocupation
+  pk: 59
+  fields:
+    name: Psiquiatra
+
+- model: patient.ocupation
+  pk: 60
+  fields:
+    name: Terapeuta ocupacional
+
+- model: patient.ocupation
+  pk: 61
+  fields:
+    name: Logopeda
+
+- model: patient.ocupation
+  pk: 62
+  fields:
+    name: Educador
+
+- model: patient.ocupation
+  pk: 63
+  fields:
+    name: Instructor fitness
+
+- model: patient.ocupation
+  pk: 64
+  fields:
+    name: Nutricionista
+
+- model: patient.ocupation
+  pk: 65
+  fields:
+    name: Entrenador personal
+
+- model: patient.ocupation
+  pk: 66
+  fields:
+    name: Masajista
+
+- model: patient.ocupation
+  pk: 67
+  fields:
+    name: Esteticista
+
+- model: patient.ocupation
+  pk: 68
+  fields:
+    name: Técnico de emergencias médicas
+
+- model: patient.ocupation
+  pk: 69
+  fields:
+    name: Socorrista
+
+- model: patient.ocupation
+  pk: 70
+  fields:
+    name: Investigador
+
+- model: patient.ocupation
+  pk: 71
+  fields:
+    name: Científico
+
+- model: patient.ocupation
+  pk: 72
+  fields:
+    name: Investigador privado
+
+- model: patient.ocupation
+  pk: 73
+  fields:
+    name: Detectives
+
+- model: patient.ocupation
+  pk: 74
+  fields:
+    name: Analista financiero
+
+- model: patient.ocupation
+  pk: 75
+  fields:
+    name: Consultor de negocios
+
+- model: patient.ocupation
+  pk: 76
+  fields:
+    name: Gerente de proyecto
+
+- model: patient.ocupation
+  pk: 77
+  fields:
+    name: Director de marketing
+
+- model: patient.ocupation
+  pk: 78
+  fields:
+    name: Publicista
+
+- model: patient.ocupation
+  pk: 79
+  fields:
+    name: Relaciones públicas
+
+- model: patient.ocupation
+  pk: 80
+  fields:
+    name: Analista de sistemas
+
+- model: patient.ocupation
+  pk: 81
+  fields:
+    name: Ingeniero de software
+
+- model: patient.ocupation
+  pk: 82
+  fields:
+    name: Administrador de redes
+
+- model: patient.ocupation
+  pk: 83
+  fields:
+    name: Administrador de bases de datos
+
+- model: patient.ocupation
+  pk: 84
+  fields:
+    name: Especialista en ciberseguridad
+
+- model: patient.ocupation
+  pk: 85
+  fields:
+    name: Soporte técnico
+
+- model: patient.ocupation
+  pk: 86
+  fields:
+    name: Operador de call center
+
+- model: patient.ocupation
+  pk: 87
+  fields:
+    name: Agente de ventas
+
+- model: patient.ocupation
+  pk: 88
+  fields:
+    name: Representante de servicio al cliente
+
+- model: patient.ocupation
+  pk: 89
+  fields:
+    name: Cajero
+
+- model: patient.ocupation
+  pk: 90
+  fields:
+    name: Recepcionista
+
+- model: patient.ocupation
+  pk: 91
+  fields:
+    name: Secretaria
+
+- model: patient.ocupation
+  pk: 92
+  fields:
+    name: Asistente administrativo
+
+- model: patient.ocupation
+  pk: 93
+  fields:
+    name: Comercial
+
+- model: patient.ocupation
+  pk: 94
+  fields:
+    name: Representante de ventas
+
+- model: patient.ocupation
+  pk: 95
+  fields:
+    name: Analista de mercado
+
+- model: patient.ocupation
+  pk: 96
+  fields:
+    name: Investigador de mercado
+
+- model: patient.ocupation
+  pk: 97
+  fields:
+    name: Consultor de recursos humanos
+
+- model: patient.ocupation
+  pk: 98
+  fields:
+    name: Especialista en reclutamiento
+
+- model: patient.ocupation
+  pk: 99
+  fields:
+    name: Gerente de recursos humanos
+
+- model: patient.ocupation
+  pk: 100
+  fields:
+    name: Traductor
+
+- model: patient.ocupation
+  pk: 101
+  fields:
+    name: Oficial de seguridad privada
+
+- model: patient.ocupation
+  pk: 102
+  fields:
+    name: Ama de casa
