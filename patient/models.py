@@ -1,4 +1,5 @@
 from django.db import models
+from django.forms import ValidationError
 from django.utils import timezone
 from django.utils.translation import gettext_lazy as _
 from .validators.dpi_validation import dpi_is_valid
@@ -15,6 +16,11 @@ class Ocupation(models.Model):
 
     def __str__(self):
         return self.name
+    
+    class Meta:
+        ordering = ['name']
+        verbose_name = _('Ocupación')
+        verbose_name_plural = _('Ocupaciones')
 
 
 class Alergy(models.Model):
@@ -27,6 +33,10 @@ class Alergy(models.Model):
     def __str__(self):
         return self.name
 
+    class Meta:
+        ordering = ['name']
+        verbose_name = _('Alergía')
+        verbose_name_plural = _('Alergias')
 
 class Patient(models.Model):
     """
