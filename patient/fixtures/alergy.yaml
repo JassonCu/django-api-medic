@@ -1,0 +1,200 @@
+- model: patient.alergy
+  pk: 1
+  fields:
+    name: Alergia a los ácaros
+- model: patient.alergy
+  pk: 2
+  fields:
+    name: Alergia al polen de las flores
+- model: patient.alergy
+  pk: 3
+  fields:
+    name: Alergia al polvo doméstico
+- model: patient.alergy
+  pk: 4
+  fields:
+    name: Alergia al pelo de los gatos
+- model: patient.alergy
+  pk: 5
+  fields:
+    name: Alergia al polen de los árboles
+- model: patient.alergy
+  pk: 6
+  fields:
+    name: Alergia al polen de las hierbas
+- model: patient.alergy
+  pk: 7
+  fields:
+    name: Alergia a las cucarachas
+- model: patient.alergy
+  pk: 8
+  fields:
+    name: Alergia a los ácaros del polvo
+- model: patient.alergy
+  pk: 9
+  fields:
+    name: Alergia a los hongos
+- model: patient.alergy
+  pk: 10
+  fields:
+    name: Alergia al pelo de los perros
+- model: patient.alergy
+  pk: 11
+  fields:
+    name: Alergia a los alimentos (varios tipos)
+- model: patient.alergy
+  pk: 12
+  fields:
+    name: Alergia a medicamentos (varios tipos)
+- model: patient.alergy
+  pk: 13
+  fields:
+    name: Alergia a los metales
+- model: patient.alergy
+  pk: 14
+  fields:
+    name: Alergia al látex
+- model: patient.alergy
+  pk: 15
+  fields:
+    name: Alergia al veneno de insectos (abejas, avispas)
+- model: patient.alergy
+  pk: 16
+  fields:
+    name: Alergia a la caspa animal
+- model: patient.alergy
+  pk: 17
+  fields:
+    name: Alergia a los productos químicos
+- model: patient.alergy
+  pk: 18
+  fields:
+    name: Alergia a los cosméticos
+- model: patient.alergy
+  pk: 19
+  fields:
+    name: Alergia a la saliva de los animales
+- model: patient.alergy
+  pk: 20
+  fields:
+    name: Alergia a los tintes para el cabello
+- model: patient.alergy
+  pk: 21
+  fields:
+    name: Alergia a los perfumes
+- model: patient.alergy
+  pk: 22
+  fields:
+    name: Alergia al polvo de tiza
+- model: patient.alergy
+  pk: 23
+  fields:
+    name: Alergia al polvo de libros
+- model: patient.alergy
+  pk: 24
+  fields:
+    name: Alergia al polvo de papelería
+- model: patient.alergy
+  pk: 25
+  fields:
+    name: Alergia al polvo de plástico
+- model: patient.alergy
+  pk: 26
+  fields:
+    name: Alergia a la lana
+- model: patient.alergy
+  pk: 27
+  fields:
+    name: Alergia a la fibra de vidrio
+- model: patient.alergy
+  pk: 28
+  fields:
+    name: Alergia a la fibra de carbono
+- model: patient.alergy
+  pk: 29
+  fields:
+    name: Alergia a la resina
+- model: patient.alergy
+  pk: 30
+  fields:
+    name: Alergia a la goma
+- model: patient.alergy
+  pk: 31
+  fields:
+    name: Alergia a la acetona
+- model: patient.alergy
+  pk: 32
+  fields:
+    name: Alergia a la formaldehído
+- model: patient.alergy
+  pk: 33
+  fields:
+    name: Alergia a la uretano
+- model: patient.alergy
+  pk: 34
+  fields:
+    name: Alergia al polvo de metales
+- model: patient.alergy
+  pk: 35
+  fields:
+    name: Alergia a las fibras textiles
+- model: patient.alergy
+  pk: 36
+  fields:
+    name: Alergia a los polvos cosméticos
+- model: patient.alergy
+  pk: 37
+  fields:
+    name: Alergia a los ácidos grasos
+- model: patient.alergy
+  pk: 38
+  fields:
+    name: Alergia a los conservantes
+- model: patient.alergy
+  pk: 39
+  fields:
+    name: Alergia a las ceras
+- model: patient.alergy
+  pk: 40
+  fields:
+    name: Alergia al peróxido de hidrógeno
+- model: patient.alergy
+  pk: 41
+  fields:
+    name: Alergia a las lipoproteínas
+- model: patient.alergy
+  pk: 42
+  fields:
+    name: Alergia a las películas
+- model: patient.alergy
+  pk: 43
+  fields:
+    name: Alergia a los antimicóticos
+- model: patient.alergy
+  pk: 44
+  fields:
+    name: Alergia a los colorantes
+- model: patient.alergy
+  pk: 45
+  fields:
+    name: Alergia a los desinfectantes
+- model: patient.alergy
+  pk: 46
+  fields:
+    name: Alergia a los aceites
+- model: patient.alergy
+  pk: 47
+  fields:
+    name: Alergia a las resinas epoxi
+- model: patient.alergy
+  pk: 48
+  fields:
+    name: Alergia a las esencias
+- model: patient.alergy
+  pk: 49
+  fields:
+    name: Alergia a las gomas elásticas
+- model: patient.alergy
+  pk: 50
+  fields:
+    name: Alergia a las joyas
