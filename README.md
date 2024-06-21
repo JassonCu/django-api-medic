@@ -44,8 +44,6 @@ This project integrates robust backend and frontend technologies to provide a co
 
 - [@Jasson Rolando Cu](https://www.github.com/jassoncu)
 
----
-
 ## Local Installation
 
 To install and run the project locally, follow these steps:
@@ -122,8 +120,6 @@ Finally, with migrations applied and test data loaded, you can run your Django p
 python manage.py runserver
 ```
 
----
-
 ## Required Environment Variables
 
 To ensure the project runs correctly, configure the following environment variables. These variables are primarily used for MySQL database configuration and Docker container management. You can use the `.env-example` file as a reference to create your own `.env` file.
@@ -147,11 +143,8 @@ To ensure the project runs correctly, configure the following environment variab
 - It is recommended to have MySQL database management system installed. If not installed locally, you can use Docker to easily create and manage a MySQL container.
 - Make sure to adjust the environment variables according to your development environment specifications and configurations.
 
----
 
 To complement the documentation with the necessary commands for creating a MySQL instance using Docker, here's an additional section you can add:
-
----
 
 ## Creating MySQL Instance with Docker
 
@@ -206,7 +199,56 @@ This will display a list of all running Docker containers. You should see your M
 
 Use the appropriate environment variables (`MYSQLDB_HOST`, `MYSQLDB_PASSWORD`, etc.) in your `.env` file to configure your Django application's connection to the MySQL container you just created.
 
----
+## Running with Docker Compose
+
+Here's the text in English for your instructions on running the application with Docker Compose:
+
+To run your application using Docker Compose, follow these steps:
+
+1. **Ensure Docker and Docker Compose are installed:**
+   - Docker: [Install Docker](https://docs.docker.com/get-docker/)
+   - Docker Compose: [Install Docker Compose](https://docs.docker.com/compose/install/)
+
+2. **Set up your `.env` file:**
+   - Make sure your `.env` file is properly configured with the necessary environment variables for your services (`DJANGO_LOCAL_PORT`, `DJANGO_DOCKER_PORT`, `MYSQLDB_USER`, `MYSQLDB_PASSWORD`, etc.).
+
+3. **Navigate to the root of your project where `docker-compose.yml` is located.**
+
+4. **Run Docker Compose:**
+   - Open a terminal or command line.
+   - Execute the following command to build the services defined in your `docker-compose.yml` file and start the containers:
+
+     ```bash
+     docker-compose up -d
+     ```
+
+     - `-d` (detach) is used to run the containers in the background.
+
+   - This command will start building Docker images as per the specifications in `docker-compose.yml`, download necessary images (if not available locally), and launch the containers.
+
+5. **Verify execution:**
+   - To check if your containers are running, you can use the following command:
+
+     ```bash
+     docker-compose ps
+     ```
+
+     This will display the status of your services (`djangoapimedic` and `mysqldb`).
+
+6. **Access your application:**
+   - If the Django application is configured correctly, you should be able to access it from your web browser.
+   - For MySQL database, you can verify its status and connection from the Django application or another database management tool.
+
+7. **Stop and clean up:**
+   - When you want to stop and remove the containers created by Docker Compose, you can execute:
+
+     ```bash
+     docker-compose down
+     ```
+
+     This command will stop and remove the containers, while retaining persistent data volumes unless you specify the `-v` option to remove volumes as well.
+
+Following these steps should enable you to run your application effectively using Docker Compose. Be sure to review the command output for any error or warning messages that may require adjustments in your configuration.
 
 ## Running Tests
 
@@ -261,9 +303,6 @@ This command will execute all tests defined in your project and display the resu
 
 After running the tests, check the console output to ensure that all tests passed successfully. If any test fails, review the error details to identify and correct any issues in your code.
 
----
-
----
 
 ## Project Features
 
@@ -322,7 +361,5 @@ After running the tests, check the console output to ensure that all tests passe
 5. **Monitoring and Logging:**
    - Logging of events and errors for analysis and debugging.
    - Implementation of monitoring tools for system performance.
-
----
 
 Thank you very much, and best regards. 🚀
