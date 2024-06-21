@@ -201,8 +201,6 @@ Use the appropriate environment variables (`MYSQLDB_HOST`, `MYSQLDB_PASSWORD`, e
 
 ## Running with Docker Compose
 
-Here's the text in English for your instructions on running the application with Docker Compose:
-
 To run your application using Docker Compose, follow these steps:
 
 1. **Ensure Docker and Docker Compose are installed:**
