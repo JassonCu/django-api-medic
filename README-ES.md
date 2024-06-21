@@ -46,18 +46,19 @@ Este proyecto integraría robustas tecnologías backend y frontend para proporci
 
 - [@Jasson Rolando Cu](https://www.github.com/jassoncu)
 
----
 
 ## Instalación de forma local
 
 Para instalar y ejecutar el proyecto localmente, sigue estos pasos:
 
 #### 1. Clona el repositorio desde GitHub
+
 ```bash
 git clone https://github.com/JassonCu/django-api-medic
 ```
 
 #### 2. Accede al directorio del proyecto
+
 ```bash
 cd django-api-medic
 ```
@@ -67,11 +68,13 @@ cd django-api-medic
 Es una buena práctica utilizar un entorno virtual para manejar las dependencias del proyecto de forma aislada.
 
 ##### 3.1 En Windows
+
 ```bash
 python -m venv venv
 ```
 
 ##### 3.2 En sistemas basados en Unix (Linux, macOS)
+
 ```bash
 python3 -m venv venv
 ```
@@ -81,16 +84,19 @@ python3 -m venv venv
 Antes de instalar las dependencias del proyecto, activa el entorno virtual:
 
 ##### En Windows (cmd)
+
 ```bash
 venv\Scripts\activate
 ```
 
 ##### En Windows (PowerShell)
+
 ```bash
 venv\Scripts\Activate.ps1
 ```
 
 ##### En sistemas basados en Unix
+
 ```bash
 source venv/bin/activate
 ```
@@ -110,8 +116,6 @@ python manage.py migrate
 
 #### 7. Carga los datos de prueba (fixtures YAML)
 
-Si tienes datos de prueba en formato YAML (fixtures) y deseas cargarlos en la base de datos, utiliza el comando `loaddata`:
-
 ```bash
 python manage.py loaddata */fixtures/*.yaml
 ```
@@ -123,8 +127,6 @@ Finalmente, con las migraciones aplicadas y los datos de prueba cargados, puedes
 ```bash
 python manage.py runserver
 ```
-
-------
 
 ## Variables de entorno necesarias
 
@@ -149,11 +151,7 @@ Para que el proyecto funcione correctamente, es necesario configurar algunas var
 - Es recomendable tener instalado un gestor de base de datos MySQL. Si no lo tienes instalado localmente, puedes utilizar Docker para crear y gestionar un contenedor de MySQL de manera sencilla.
 - Asegúrate de ajustar las variables de entorno según las especificaciones y configuraciones de tu entorno de desarrollo.
 
----
-
 Para complementar la documentación con los comandos necesarios para crear una instancia de MySQL utilizando Docker, aquí tienes una sección adicional que puedes añadir:
-
----
 
 ## Creación de instancia de MySQL con Docker
 
@@ -202,15 +200,100 @@ Puedes verificar que el contenedor MySQL esté en ejecución utilizando el sigui
 docker ps
 ```
 
-Esto mostrará una lista de todos los contenedores Docker en ejecución. Deberías ver tu contenedor MySQL (`mi-mysql` en este ejemplo) listado.
+Esto mostrará una lista de todos los contenedores Docker en ejecución. Deberías ver tu contenedor MySQL (`mysqldb` en este ejemplo) listado.
 
 #### 4. Conecta tu aplicación Django al contenedor MySQL
 
 Utiliza las variables de entorno adecuadas (`MYSQLDB_HOST`, `MYSQLDB_PASSWORD`, etc.) en tu archivo `.env` para configurar la conexión de tu aplicación Django al contenedor MySQL que acabas de crear.
 
----
+## Ejecución de la aplicación por medio de Docker compose
 
----
+Otra forma de poder ejecutar la aplicación es por medio de `docker-compose`. Si observas el proyecto, en la raíz del mismo tenemos un archivo llamado `docker-compose.yml`. En este archivo se definen dos servicios: el primero hace referencia a una imagen de Docker que he creado específicamente para el proyecto. Esta imagen está construida a partir del archivo `Dockerfile` que se encuentra en el directorio principal del proyecto. El segundo servicio se encarga de configurar una base de datos MySQL para la aplicación. Utiliza la imagen oficial de MySQL desde Docker Hub y carga las variables de entorno necesarias desde el archivo `.env`. Este servicio expone los puertos necesarios para que la aplicación Django pueda conectarse y utilizar la base de datos sin problemas.
+
+A continuación tienes el fragmento del archivo `docker-compose.yml` con la configuración detallada:
+
+```yaml
+version: '3.8'
+services:
+  djangoapimedic:
+    image: djangoapimedic
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    depends_on:
+      - mysqldb
+    env_file:
+      - .env
+    ports:
+      - "${DJANGO_LOCAL_PORT}:${DJANGO_DOCKER_PORT}"
+    environment:
+      - DB_HOST=mysqldb
+      - DB_USER=${MYSQLDB_USER}
+      - DB_PASSWORD=${MYSQLDB_PASSWORD}
+      - DB_NAME=${MYSQLDB_DATABASE}
+      - DB_PORT=${MYSQLDB_DOCKER_PORT}
+
+  mysqldb:
+    image: mysql
+    env_file:
+      - .env
+    environment:
+      - MYSQL_USER=${MYSQLDB_USER}
+      - MYSQL_PASSWORD=${MYSQLDB_PASSWORD}
+      - MYSQL_ROOT_PASSWORD=${MYSQLDB_ROOT_PASSWORD}
+      - MYSQL_DATABASE=${MYSQLDB_DATABASE}
+    ports:
+      - "${MYSQLDB_LOCAL_PORT}:${MYSQLDB_DOCKER_PORT}"
+
+```
+En este archivo docker-compose.yml, el servicio mysqldb está configurado para utilizar la imagen oficial de MySQL. Las variables de entorno necesarias se cargan desde el archivo .env, asegurando que la base de datos esté correctamente configurada y accesible para el servicio djangoapimedic.
+
+Para ejecutar tu aplicación utilizando Docker Compose, sigue estos pasos:
+
+1. **Asegúrate de tener Docker y Docker Compose instalados:**
+   - Docker: https://docs.docker.com/get-docker/
+   - Docker Compose: https://docs.docker.com/compose/install/
+
+2. **Configura tu archivo `.env`:**
+   - Asegúrate de que tu archivo `.env` esté correctamente configurado con las variables de entorno necesarias para tus servicios (`DJANGO_LOCAL_PORT`, `DJANGO_DOCKER_PORT`, `MYSQLDB_USER`, `MYSQLDB_PASSWORD`, etc.).
+
+3. **Ubícate en la raíz de tu proyecto donde tienes el archivo `docker-compose.yml`.**
+
+4. **Ejecuta Docker Compose:**
+   - Abre una terminal o línea de comandos.
+   - Ejecuta el siguiente comando para construir los servicios definidos en tu `docker-compose.yml` y levantar los contenedores:
+
+     ```bash
+     docker-compose up -d
+     ```
+
+     - `-d` (detach) se utiliza para ejecutar los contenedores en segundo plano.
+
+   - Este comando comenzará a construir las imágenes Docker según las especificaciones en `docker-compose.yml`, descargará las imágenes necesarias (si no están disponibles localmente) y arrancará los contenedores.
+
+5. **Verifica la ejecución:**
+   - Para verificar que tus contenedores están corriendo, puedes usar el siguiente comando:
+
+     ```bash
+     docker-compose ps
+     ```
+
+     Esto mostrará el estado de tus servicios (`djangoapimedic` y `mysqldb`).
+
+6. **Accede a tu aplicación:**
+   - Si la aplicación Django está configurada correctamente, deberías poder acceder a ella desde tu navegador web.
+   - Para la base de datos MySQL, puedes verificar su estado y conexión desde la aplicación Django u otra herramienta de administración de bases de datos.
+
+7. **Detener y limpiar:**
+   - Cuando quieras detener y eliminar los contenedores creados por Docker Compose, puedes ejecutar:
+
+     ```bash
+     docker-compose down
+     ```
+
+     Este comando detendrá y eliminará los contenedores, pero conservará los volúmenes de datos persistentes a menos que se especifique la opción `-v` para eliminar también los volúmenes.
+
+Con estos pasos, deberías poder ejecutar tu aplicación utilizando Docker Compose de manera efectiva. Asegúrate de revisar la salida de los comandos para cualquier mensaje de error o advertencia que pueda requerir ajustes en tu configuración.
 
 ## Ejecución de pruebas (Tests)
 
@@ -221,16 +304,19 @@ Para verificar que todas las funcionalidades de tu aplicación están operando c
 Si aún no tienes activado tu entorno virtual, asegúrate de hacerlo para aislar las dependencias del proyecto:
 
 ##### En Windows (cmd)
+
 ```bash
 venv\Scripts\activate
 ```
 
 ##### En Windows (PowerShell)
+
 ```bash
 venv\Scripts\Activate.ps1
 ```
 
 ##### En sistemas basados en Unix
+
 ```bash
 source venv/bin/activate
 ```
@@ -264,9 +350,6 @@ Este comando ejecutará todas las pruebas definidas en tu proyecto y mostrará l
 #### 3. Verifica los resultados
 
 Después de ejecutar los tests, verifica la salida en la consola para asegurarte de que todas las pruebas pasaron satisfactoriamente. Si algún test falla, revisa los detalles del error para identificar y corregir cualquier problema en tu código.
-
----
----
 
 ## Características del Proyecto
 
@@ -324,7 +407,5 @@ Después de ejecutar los tests, verifica la salida en la consola para asegurarte
 5. **Monitorización y Logging:**
    - Registro de eventos y errores para análisis y debugging.
    - Implementación de herramientas de monitorización para el rendimiento del sistema.
-
----
 
 Muchas gracias, un abrazo. 🚀
