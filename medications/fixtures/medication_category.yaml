@@ -257,3 +257,18 @@
   pk: 51
   fields:
     name: "Antiprotozoario"
+
+- model: medications.category
+  pk: 52
+  fields:
+    name: "Inhibidor de la bomba de protones (IBP)"
+
+- model: medications.category
+  pk: 53
+  fields:
+    name: "Antibiótico de amplio espectro"
+
+- model: medications.category
+  pk: 54
+  fields:
+    name: "Antidiarreico"
