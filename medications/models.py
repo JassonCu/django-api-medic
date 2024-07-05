@@ -27,9 +27,9 @@ class Medication(models.Model):
     unit = models.CharField(max_length=100, verbose_name=_(
         "Unidad de Medida"), null=False, blank=False)
     recommended_dosage = models.CharField(
-        max_length=255, blank=True, null=True, verbose_name=_("Dosis Recomendada"))
+        max_length=255, blank=True, null=True, verbose_name=_("Dosis Recomendada"), default='La que indique el médico')
     indications = models.TextField(
-        blank=True, null=True, verbose_name=_("Indicaciones"))
+        blank=True, null=True, verbose_name=_("Indicaciones"), default='Las que indique el médico')
     contraindications = models.TextField(
         blank=True, null=True, verbose_name=_("Contraindicaciones"))
     notes = models.TextField(blank=True, null=True,
@@ -48,6 +48,13 @@ class Medication(models.Model):
 
     class Meta:
         ordering = ["id"]
+
+    def save(self, *args, **kwargs):
+        if not self.recommended_dosage:
+            self.recommended_dosage = 'La que indique el médico'
+        if not self.indications:
+            self.indications = 'Las que indique el médico'
+        super().save(*args, **kwargs)
 
 
 class Category(models.Model):

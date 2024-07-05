@@ -272,3 +272,33 @@
   pk: 54
   fields:
     name: "Antidiarreico"
+
+- model: medications.category
+  pk: 55
+  fields:
+    name: "Antidepresivo"
+
+- model: medications.category
+  pk: 56
+  fields:
+    name: "Anticonvulsa"
+
+- model: medications.category
+  pk: 57
+  fields:
+    name: "Corticosteroides"
+
+- model: medications.category
+  pk: 58
+  fields:
+    name: "Betabloqueantes"
+
+- model: medications.category
+  pk: 59
+  fields:
+    name: "Antiparasitario"
+
+- model: medications.category
+  pk: 60
+  fields:
+    name: "Oftálmico"
