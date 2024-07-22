@@ -302,3 +302,28 @@
   pk: 60
   fields:
     name: "Oftálmico"
+
+- model: medications.category
+  pk: 61
+  fields:
+    name: "Antieméticos"
+
+- model: medications.category
+  pk: 62
+  fields:
+    name: "Antivertiginosos"
+
+- model: medications.category
+  pk: 63
+  fields:
+    name: "Psicotrópicos"
+
+- model: medications.category
+  pk: 64
+  fields:
+    name: "Agente hemorheológico"
+
+- model: medications.category
+  pk: 65
+  fields:
+    name: "Vasodilatador periférico"
