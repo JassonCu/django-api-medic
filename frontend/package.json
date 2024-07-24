@@ -14,7 +14,7 @@
       "email": "jassoncucaal14@hotmail.com"
     }
   ],
-  "license" :"MIT",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -30,6 +30,7 @@
     "@vueuse/core": "^10.5.0",
     "@vueuse/math": "^10.5.0",
     "apexcharts": "3.37.0",
+    "axios": "^1.7.2",
     "pinia": "^2.1.7",
     "prismjs": "^1.29.0",
     "roboto-fontface": "^0.10.0",
