@@ -70,3 +70,17 @@ class Category(models.Model):
         ordering = ["name"]
         verbose_name = _("Categoría")
         verbose_name_plural = _("Categorías")
+
+class MedicationPresentation(models.Model):
+    """
+    Modelo de datos para las presentaciones de los medicamentos.
+    """
+    name = models.CharField(max_length=100, verbose_name=_("Nombre"))
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        ordering = ["name"]
+        verbose_name = _("Presentación")
+        verbose_name_plural = _("Presentaciones")
