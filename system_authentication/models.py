@@ -21,6 +21,16 @@ class User(AbstractUser):
         related_query_name='custom_user',
     )
 
+    def get_full_name(self) -> str:
+        return f"{self.first_name} {self.last_name}"
+
+    def get_short_name(self) -> str:
+        return self.first_name
+
+    def __str__(self):
+        return self.email
+
+
 class Role(models.Model):
     name = models.CharField(_('Nombre'), max_length=100)
     description = models.TextField(_('Descripción'), blank=True, null=True)
