@@ -5,6 +5,21 @@ from django.utils import timezone
 # Create your models here.
 
 
+class Manufacturer(models.Model):
+    """
+    Modelo de datos para los fabricantes de medicamentos.
+    """
+    name = models.CharField(_("Nombre"), max_length=255, unique=True)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        ordering = ["name"]
+        verbose_name = _("Fabricante")
+        verbose_name_plural = _("Fabricantes")
+
+
 class Medication(models.Model):
     """
     Modelo de datos para los medicamentos.
@@ -18,8 +33,8 @@ class Medication(models.Model):
         max_digits=10, decimal_places=2, verbose_name=_("Precio"))
     expiration_date = models.DateField(verbose_name=_(
         "Fecha de vencimiento"), null=False, blank=False)
-    manufacturer = models.CharField(
-        max_length=255, verbose_name=_("Fabricante"))
+    manufacturer = models.ForeignKey(
+        Manufacturer, on_delete=models.CASCADE, verbose_name=_("Fabricante"))
     stock = models.CharField(verbose_name=_(
         "Inventario"), null=False, blank=False, max_length=255)
     code = models.CharField(max_length=100, unique=False, verbose_name=_(
@@ -70,6 +85,7 @@ class Category(models.Model):
         ordering = ["name"]
         verbose_name = _("Categoría")
         verbose_name_plural = _("Categorías")
+
 
 class MedicationPresentation(models.Model):
     """
