@@ -68,6 +68,14 @@ class MedicationsChemicalCompound(models.Model):
         verbose_name_plural = _("Compuestos Químicos")
 
 
+class MedicationContraindications(models.Model):
+    name = models.CharField(max_length=255, unique=True,
+                            verbose_name=_("Nombre"), null=False, blank=False)
+
+    def __str__(self):
+        return self.name
+
+
 class Medication(models.Model):
     """
     Modelo de datos para los medicamentos.
@@ -89,8 +97,6 @@ class Medication(models.Model):
         max_length=255, blank=True, null=True, verbose_name=_("Dosis Recomendada"), default='La que indique el médico')
     indications = models.TextField(
         blank=True, null=True, verbose_name=_("Indicaciones"), default='Las que indique el médico')
-    contraindications = models.TextField(
-        blank=True, null=True, verbose_name=_("Contraindicaciones"))
     notes = models.TextField(blank=True, null=True,
                              verbose_name=_("Notas Adicionales"))
     created_at = models.DateTimeField(
@@ -105,6 +111,8 @@ class Medication(models.Model):
         'MedicationsManufacturer', verbose_name=_("Fabricante"), blank=False)
     chemical_compound = models.ManyToManyField(
         'MedicationsChemicalCompound', null=False, blank=False, verbose_name=_("Compuesto Químico"))
+    contraindications = models.ManyToManyField(
+        'MedicationContraindications', null=False, blank=False, verbose_name=_('Contraindicaciones'))
 
     def __str__(self):
         return self.name

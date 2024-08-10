@@ -1,0 +1,400 @@
+- model: medications.medicationscontraindications
+  pk: 1
+  fields:
+    name: "Hipersensibilidad a alguno de los componentes"
+- model: medications.medicationscontraindications
+  pk: 2
+  fields:
+    name: "Insuficiencia hepática grave"
+- model: medications.medicationscontraindications
+  pk: 3
+  fields:
+    name: "Insuficiencia renal severa"
+- model: medications.medicationscontraindications
+  pk: 4
+  fields:
+    name: "Enfermedad cardiovascular grave"
+- model: medications.medicationscontraindications
+  pk: 5
+  fields:
+    name: "Presión arterial alta no controlada"
+- model: medications.medicationscontraindications
+  pk: 6
+  fields:
+    name: "Úlcera gástrica activa"
+- model: medications.medicationscontraindications
+  pk: 7
+  fields:
+    name: "Enfermedad pulmonar obstructiva crónica (EPOC) grave"
+- model: medications.medicationscontraindications
+  pk: 8
+  fields:
+    name: "Diabetes no controlada"
+- model: medications.medicationscontraindications
+  pk: 9
+  fields:
+    name: "Trastornos hemorrágicos"
+- model: medications.medicationscontraindications
+  pk: 10
+  fields:
+    name: "Embarazo"
+- model: medications.medicationscontraindications
+  pk: 11
+  fields:
+    name: "Lactancia"
+- model: medications.medicationscontraindications
+  pk: 12
+  fields:
+    name: "Epilepsia no controlada"
+- model: medications.medicationscontraindications
+  pk: 13
+  fields:
+    name: "Enfermedades autoinmunes activas"
+- model: medications.medicationscontraindications
+  pk: 14
+  fields:
+    name: "Hiperuricemia"
+- model: medications.medicationscontraindications
+  pk: 15
+  fields:
+    name: "Glaucoma de ángulo cerrado"
+- model: medications.medicationscontraindications
+  pk: 16
+  fields:
+    name: "Hipotiroidismo no tratado"
+- model: medications.medicationscontraindications
+  pk: 17
+  fields:
+    name: "Cáncer en fase terminal"
+- model: medications.medicationscontraindications
+  pk: 18
+  fields:
+    name: "Tromboflebitis"
+- model: medications.medicationscontraindications
+  pk: 19
+  fields:
+    name: "Enfermedades renales en etapa terminal"
+- model: medications.medicationscontraindications
+  pk: 20
+  fields:
+    name: "Tensión arterial baja"
+- model: medications.medicationscontraindications
+  pk: 21
+  fields:
+    name: "Neumonía"
+- model: medications.medicationscontraindications
+  pk: 22
+  fields:
+    name: "Anemia severa"
+- model: medications.medicationscontraindications
+  pk: 23
+  fields:
+    name: "Hepatitis activa"
+- model: medications.medicationscontraindications
+  pk: 24
+  fields:
+    name: "Psoriasis grave"
+- model: medications.medicationscontraindications
+  pk: 25
+  fields:
+    name: "Trastornos psiquiátricos graves"
+- model: medications.medicationscontraindications
+  pk: 26
+  fields:
+    name: "Alergias severas"
+- model: medications.medicationscontraindications
+  pk: 27
+  fields:
+    name: "Enfermedades de la piel severas"
+- model: medications.medicationscontraindications
+  pk: 28
+  fields:
+    name: "Hiperparatiroidismo"
+- model: medications.medicationscontraindications
+  pk: 29
+  fields:
+    name: "Hipertensión pulmonar"
+- model: medications.medicationscontraindications
+  pk: 30
+  fields:
+    name: "Enfermedad de Crohn activa"
+- model: medications.medicationscontraindications
+  pk: 31
+  fields:
+    name: "Colitis ulcerosa activa"
+- model: medications.medicationscontraindications
+  pk: 32
+  fields:
+    name: "Neoplasias hematológicas"
+- model: medications.medicationscontraindications
+  pk: 33
+  fields:
+    name: "Cardiopatía isquémica"
+- model: medications.medicationscontraindications
+  pk: 34
+  fields:
+    name: "Afecciones neuromusculares graves"
+- model: medications.medicationscontraindications
+  pk: 35
+  fields:
+    name: "Distrofia muscular"
+- model: medications.medicationscontraindications
+  pk: 36
+  fields:
+    name: "Epilepsia con crisis no controladas"
+- model: medications.medicationscontraindications
+  pk: 37
+  fields:
+    name: "Enfermedades degenerativas del sistema nervioso"
+- model: medications.medicationscontraindications
+  pk: 38
+  fields:
+    name: "Hipoglucemia severa"
+- model: medications.medicationscontraindications
+  pk: 39
+  fields:
+    name: "Enfermedades mitocondriales"
+- model: medications.medicationscontraindications
+  pk: 40
+  fields:
+    name: "Trastornos del sueño graves"
+- model: medications.medicationscontraindications
+  pk: 41
+  fields:
+    name: "Enfermedad de Wilson"
+- model: medications.medicationscontraindications
+  pk: 42
+  fields:
+    name: "Enfermedades infecciosas activas"
+- model: medications.medicationscontraindications
+  pk: 43
+  fields:
+    name: "Fiebre reumática"
+- model: medications.medicationscontraindications
+  pk: 44
+  fields:
+    name: "Mieloma múltiple"
+- model: medications.medicationscontraindications
+  pk: 45
+  fields:
+    name: "Hipertrigliceridemia severa"
+- model: medications.medicationscontraindications
+  pk: 46
+  fields:
+    name: "Hiperlipidemia severa"
+- model: medications.medicationscontraindications
+  pk: 47
+  fields:
+    name: "Hipoalbuminemia"
+- model: medications.medicationscontraindications
+  pk: 48
+  fields:
+    name: "Hipoglucemia severa"
+- model: medications.medicationscontraindications
+  pk: 49
+  fields:
+    name: "Enfermedades sistémicas graves"
+- model: medications.medicationscontraindications
+  pk: 50
+  fields:
+    name: "Hiperhidrosis"
+- model: medications.medicationscontraindications
+  pk: 51
+  fields:
+    name: "Colesterol elevado"
+- model: medications.medicationscontraindications
+  pk: 52
+  fields:
+    name: "Afecciones respiratorias severas"
+- model: medications.medicationscontraindications
+  pk: 53
+  fields:
+    name: "Síndrome de Cushing"
+- model: medications.medicationscontraindications
+  pk: 54
+  fields:
+    name: "Enfermedad de Addison"
+- model: medications.medicationscontraindications
+  pk: 55
+  fields:
+    name: "Enfermedades metabólicas"
+- model: medications.medicationscontraindications
+  pk: 56
+  fields:
+    name: "Neuritis"
+- model: medications.medicationscontraindications
+  pk: 57
+  fields:
+    name: "Epilepsia refractaria"
+- model: medications.medicationscontraindications
+  pk: 58
+  fields:
+    name: "Enfermedades infecciosas crónicas"
+- model: medications.medicationscontraindications
+  pk: 59
+  fields:
+    name: "Cáncer metastásico"
+- model: medications.medicationscontraindications
+  pk: 60
+  fields:
+    name: "Enfermedades desmielinizantes"
+- model: medications.medicationscontraindications
+  pk: 61
+  fields:
+    name: "Hiperpotasemia"
+- model: medications.medicationscontraindications
+  pk: 62
+  fields:
+    name: "Hipopotasemia"
+- model: medications.medicationscontraindications
+  pk: 63
+  fields:
+    name: "Síndrome nefrótico"
+- model: medications.medicationscontraindications
+  pk: 64
+  fields:
+    name: "Afecciones endocrinas graves"
+- model: medications.medicationscontraindications
+  pk: 65
+  fields:
+    name: "Síndrome de apnea obstructiva del sueño"
+- model: medications.medicationscontraindications
+  pk: 66
+  fields:
+    name: "Hipertensión arterial severa"
+- model: medications.medicationscontraindications
+  pk: 67
+  fields:
+    name: "Lupus eritematoso sistémico"
+- model: medications.medicationscontraindications
+  pk: 68
+  fields:
+    name: "Síndrome de Raynaud"
+- model: medications.medicationscontraindications
+  pk: 69
+  fields:
+    name: "Trastornos del ritmo cardíaco"
+- model: medications.medicationscontraindications
+  pk: 70
+  fields:
+    name: "Anemia perniciosa"
+- model: medications.medicationscontraindications
+  pk: 71
+  fields:
+    name: "Sordera"
+- model: medications.medicationscontraindications
+  pk: 72
+  fields:
+    name: "Ceguera"
+- model: medications.medicationscontraindications
+  pk: 73
+  fields:
+    name: "Toxoplasmosis"
+- model: medications.medicationscontraindications
+  pk: 74
+  fields:
+    name: "Enfermedad de Huntington"
+- model: medications.medicationscontraindications
+  pk: 75
+  fields:
+    name: "Esclerosis múltiple"
+- model: medications.medicationscontraindications
+  pk: 76
+  fields:
+    name: "Malformaciones congénitas"
+- model: medications.medicationscontraindications
+  pk: 77
+  fields:
+    name: "Fibrosis quística"
+- model: medications.medicationscontraindications
+  pk: 78
+  fields:
+    name: "Síndrome de Sjögren"
+- model: medications.medicationscontraindications
+  pk: 79
+  fields:
+    name: "Sindrome de Marfan"
+- model: medications.medicationscontraindications
+  pk: 80
+  fields:
+    name: "Hemofilia"
+- model: medications.medicationscontraindications
+  pk: 81
+  fields:
+    name: "Enfermedad de Paget"
+- model: medications.medicationscontraindications
+  pk: 82
+  fields:
+    name: "Distrofia ósea"
+- model: medications.medicationscontraindications
+  pk: 83
+  fields:
+    name: "Síndrome de Turner"
+- model: medications.medicationscontraindications
+  pk: 84
+  fields:
+    name: "Artritis reumatoide"
+- model: medications.medicationscontraindications
+  pk: 85
+  fields:
+    name: "Linfoma"
+- model: medications.medicationscontraindications
+  pk: 86
+  fields:
+    name: "Leucemia"
+- model: medications.medicationscontraindications
+  pk: 87
+  fields:
+    name: "Síndrome de Klinefelter"
+- model: medications.medicationscontraindications
+  pk: 88
+  fields:
+    name: "Hipogonadismo"
+- model: medications.medicationscontraindications
+  pk: 89
+  fields:
+    name: "Esclerosis lateral amiotrófica"
+- model: medications.medicationscontraindications
+  pk: 90
+  fields:
+    name: "Síndrome de Guillain-Barré"
+- model: medications.medicationscontraindications
+  pk: 91
+  fields:
+    name: "Fiebre tifoidea"
+- model: medications.medicationscontraindications
+  pk: 92
+  fields:
+    name: "Trombocitopatía"
+- model: medications.medicationscontraindications
+  pk: 93
+  fields:
+    name: "Aneurisma aórtico"
+- model: medications.medicationscontraindications
+  pk: 94
+  fields:
+    name: "Insuficiencia cardíaca congestiva"
+- model: medications.medicationscontraindications
+  pk: 95
+  fields:
+    name: "Enfermedad de la válvula cardíaca"
+- model: medications.medicationscontraindications
+  pk: 96
+  fields:
+    name: "Insuficiencia suprarrenal"
+- model: medications.medicationscontraindications
+  pk: 97
+  fields:
+    name: "Síndrome de hiperleucocitosis"
+- model: medications.medicationscontraindications
+  pk: 98
+  fields:
+    name: "Anemia hemolítica"
+- model: medications.medicationscontraindications
+  pk: 99
+  fields:
+    name: "Esquizofrenia"
+- model: medications.medicationscontraindications
+  pk: 100
+  fields:
+    name: "Neuritis óptica"
