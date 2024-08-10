@@ -1,0 +1,200 @@
+- model: medications.presentation
+  pk: 1
+  fields:
+    name: "Tabletas"
+- model: medications.presentation
+  pk: 2
+  fields:
+    name: "Cápsulas"
+- model: medications.presentation
+  pk: 3
+  fields:
+    name: "Jarabes"
+- model: medications.presentation
+  pk: 4
+  fields:
+    name: "Suspensiones"
+- model: medications.presentation
+  pk: 5
+  fields:
+    name: "Polvo para suspensión"
+- model: medications.presentation
+  pk: 6
+  fields:
+    name: "Supositorios"
+- model: medications.presentation
+  pk: 7
+  fields:
+    name: "Crema"
+- model: medications.presentation
+  pk: 8
+  fields:
+    name: "Ungüento"
+- model: medications.presentation
+  pk: 9
+  fields:
+    name: "Gel"
+- model: medications.presentation
+  pk: 10
+  fields:
+    name: "Solución oral"
+- model: medications.presentation
+  pk: 11
+  fields:
+    name: "Solución intravenosa"
+- model: medications.presentation
+  pk: 12
+  fields:
+    name: "Solución tópica"
+- model: medications.presentation
+  pk: 13
+  fields:
+    name: "Emulsión"
+- model: medications.presentation
+  pk: 14
+  fields:
+    name: "Loción"
+- model: medications.presentation
+  pk: 15
+  fields:
+    name: "Aerosol"
+- model: medications.presentation
+  pk: 16
+  fields:
+    name: "Espuma"
+- model: medications.presentation
+  pk: 17
+  fields:
+    name: "Parche transdérmico"
+- model: medications.presentation
+  pk: 18
+  fields:
+    name: "Inhalador en polvo"
+- model: medications.presentation
+  pk: 19
+  fields:
+    name: "Inhalador en spray"
+- model: medications.presentation
+  pk: 20
+  fields:
+    name: "Tabletas efervescentes"
+- model: medications.presentation
+  pk: 21
+  fields:
+    name: "Tabletas sublinguales"
+- model: medications.presentation
+  pk: 22
+  fields:
+    name: "Tabletas masticables"
+- model: medications.presentation
+  pk: 23
+  fields:
+    name: "Tabletas orodispersables"
+- model: medications.presentation
+  pk: 24
+  fields:
+    name: "Cápsulas de liberación prolongada"
+- model: medications.presentation
+  pk: 25
+  fields:
+    name: "Cápsulas de liberación rápida"
+- model: medications.presentation
+  pk: 26
+  fields:
+    name: "Cápsulas blandas"
+- model: medications.presentation
+  pk: 27
+  fields:
+    name: "Cápsulas duras"
+- model: medications.presentation
+  pk: 28
+  fields:
+    name: "Gotas oftálmicas"
+- model: medications.presentation
+  pk: 29
+  fields:
+    name: "Gotas nasales"
+- model: medications.presentation
+  pk: 30
+  fields:
+    name: "Gotas óticas"
+- model: medications.presentation
+  pk: 31
+  fields:
+    name: "Solución de lavado ocular"
+- model: medications.presentation
+  pk: 32
+  fields:
+    name: "Solución nasal"
+- model: medications.presentation
+  pk: 33
+  fields:
+    name: "Solución inyectable"
+- model: medications.presentation
+  pk: 34
+  fields:
+    name: "Suspensión inyectable"
+- model: medications.presentation
+  pk: 35
+  fields:
+    name: "Emulsión inyectable"
+- model: medications.presentation
+  pk: 36
+  fields:
+    name: "Comprimidos"
+- model: medications.presentation
+  pk: 37
+  fields:
+    name: "Comprimidos sublinguales"
+- model: medications.presentation
+  pk: 38
+  fields:
+    name: "Comprimidos masticables"
+- model: medications.presentation
+  pk: 39
+  fields:
+    name: "Comprimidos efervescentes"
+- model: medications.presentation
+  pk: 40
+  fields:
+    name: "Solución para nebulización"
+- model: medications.presentation
+  pk: 41
+  fields:
+    name: "Solución para irrigación"
+- model: medications.presentation
+  pk: 42
+  fields:
+    name: "Ointment (Ungüento en inglés)"
+- model: medications.presentation
+  pk: 43
+  fields:
+    name: "Foaming gel (Gel espumoso en inglés)"
+- model: medications.presentation
+  pk: 44
+  fields:
+    name: "Lipogel"
+- model: medications.presentation
+  pk: 45
+  fields:
+    name: "Vial (Ampolla)"
+- model: medications.presentation
+  pk: 46
+  fields:
+    name: "Ampolla"
+- model: medications.presentation
+  pk: 47
+  fields:
+    name: "Inyección intramuscular"
+- model: medications.presentation
+  pk: 48
+  fields:
+    name: "Inyección subcutánea"
+- model: medications.presentation
+  pk: 49
+  fields:
+    name: "Inyección intravenosa"
+- model: medications.presentation
+  pk: 50
+  fields:
+    name: "Pasta tópica"

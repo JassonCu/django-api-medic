@@ -5,6 +5,49 @@ from django.utils import timezone
 # Create your models here.
 
 
+class Category(models.Model):
+    """
+    Modelo de datos para las categorías de los medicamentos.
+    """
+    name = models.CharField(max_length=100, verbose_name=_("Nombre"))
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        ordering = ["name"]
+        verbose_name = _("Categoría")
+        verbose_name_plural = _("Categorías")
+
+
+class MedicationPresentation(models.Model):
+    name = models.CharField(_("Nombre"), max_length=100, unique=True)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        ordering = ["name"]
+        verbose_name = _("Presentación")
+        verbose_name_plural = _("Presentaciones")
+        verbose_name
+
+
+class MedicationPresentation(models.Model):
+    """
+    Modelo de datos para las presentaciones de los medicamentos.
+    """
+    name = models.CharField(max_length=100, verbose_name=_("Nombre"))
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        ordering = ["name"]
+        verbose_name = _("Presentación")
+        verbose_name_plural = _("Presentaciones")
+
+
 class Manufacturer(models.Model):
     """
     Modelo de datos para los fabricantes de medicamentos.
@@ -33,8 +76,6 @@ class Medication(models.Model):
         max_digits=10, decimal_places=2, verbose_name=_("Precio"))
     expiration_date = models.DateField(verbose_name=_(
         "Fecha de vencimiento"), null=False, blank=False)
-    manufacturer = models.ForeignKey(
-        Manufacturer, on_delete=models.CASCADE, verbose_name=_("Fabricante"))
     stock = models.CharField(verbose_name=_(
         "Inventario"), null=False, blank=False, max_length=255)
     code = models.CharField(max_length=100, unique=False, verbose_name=_(
@@ -55,8 +96,10 @@ class Medication(models.Model):
         auto_now=True, verbose_name=_("Fecha de actualización"))
     categories = models.ManyToManyField(
         'Category', related_name='medications', verbose_name=_("Categorías"), blank=False)
-    presentation = models.CharField(
-        max_length=100, blank=False, null=False, verbose_name=_("Presentación"))
+    presentation = models.ManyToManyField(
+        'MedicationPresentation', verbose_name=_("Presentación"), blank=False)
+    manufacturer = models.ManyToManyField(
+        'Manufacturer', verbose_name=_("Fabricante"), blank=False)
 
     def __str__(self):
         return self.name
@@ -70,33 +113,3 @@ class Medication(models.Model):
         if not self.indications:
             self.indications = 'Las que indique el médico'
         super().save(*args, **kwargs)
-
-
-class Category(models.Model):
-    """
-    Modelo de datos para las categorías de los medicamentos.
-    """
-    name = models.CharField(max_length=100, verbose_name=_("Nombre"))
-
-    def __str__(self):
-        return self.name
-
-    class Meta:
-        ordering = ["name"]
-        verbose_name = _("Categoría")
-        verbose_name_plural = _("Categorías")
-
-
-class MedicationPresentation(models.Model):
-    """
-    Modelo de datos para las presentaciones de los medicamentos.
-    """
-    name = models.CharField(max_length=100, verbose_name=_("Nombre"))
-
-    def __str__(self):
-        return self.name
-
-    class Meta:
-        ordering = ["name"]
-        verbose_name = _("Presentación")
-        verbose_name_plural = _("Presentaciones")
