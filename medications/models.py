@@ -19,6 +19,7 @@ class Category(models.Model):
         verbose_name = _("Categoría")
         verbose_name_plural = _("Categorías")
 
+
 class MedicationsPresentation(models.Model):
     """
     Modelo de datos para las presentaciones de los medicamentos.
@@ -49,6 +50,22 @@ class MedicationsManufacturer(models.Model):
         verbose_name_plural = _("Fabricantes")
 
 
+class MedicationsChemicalCompound(models.Model):
+    """
+    Modelo de datos para los compuestos químicos de los medicamentos.
+    """
+    name = models.CharField(max_length=100, unique=True, verbose_name=_("Nombre"))
+    description = models.TextField(blank=True, null=True, verbose_name=_("Descripción"))
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        ordering = ["name"]
+        verbose_name = _("Compuesto Químico")
+        verbose_name_plural = _("Compuestos Químicos")
+
+
 class Medication(models.Model):
     """
     Modelo de datos para los medicamentos.
@@ -64,8 +81,6 @@ class Medication(models.Model):
         "Fecha de vencimiento"), null=False, blank=False)
     stock = models.CharField(verbose_name=_(
         "Inventario"), null=False, blank=False, max_length=255)
-    code = models.CharField(max_length=100, unique=False, verbose_name=_(
-        "Compuesto químico"), null=False, blank=False)
     unit = models.CharField(max_length=100, verbose_name=_(
         "Unidad de Medida"), null=False, blank=False)
     recommended_dosage = models.CharField(
@@ -86,6 +101,8 @@ class Medication(models.Model):
         'MedicationsPresentation', verbose_name=_("Presentación"), blank=False)
     manufacturer = models.ManyToManyField(
         'MedicationsManufacturer', verbose_name=_("Fabricante"), blank=False)
+    chemical_compound = models.ManyToManyField(
+        'MedicationsChemicalCompound', null=False, blank=False, verbose_name=_("Compuesto Químico"))
 
     def __str__(self):
         return self.name

@@ -1,0 +1,599 @@
+- model: medications.chemicalcompound
+  pk: 1
+  fields:
+    name: "Acetaminofén"
+    description: "Utilizado para aliviar el dolor y reducir la fiebre."
+
+- model: medications.chemicalcompound
+  pk: 2
+  fields:
+    name: "Ibuprofeno"
+    description: "Antiinflamatorio no esteroideo utilizado para reducir la fiebre, dolor e inflamación."
+
+- model: medications.chemicalcompound
+  pk: 3
+  fields:
+    name: "Aspirina"
+    description: "Utilizado para reducir el dolor, la fiebre y la inflamación."
+
+- model: medications.chemicalcompound
+  pk: 4
+  fields:
+    name: "Cetirizina"
+    description: "Antihistamínico utilizado para tratar la alergia y la rinitis alérgica."
+
+- model: medications.chemicalcompound
+  pk: 5
+  fields:
+    name: "Difenhidramina"
+    description: "Antihistamínico utilizado para el tratamiento de reacciones alérgicas y el insomnio."
+
+- model: medications.chemicalcompound
+  pk: 6
+  fields:
+    name: "Lorazepam"
+    description: "Utilizado para tratar la ansiedad."
+
+- model: medications.chemicalcompound
+  pk: 7
+  fields:
+    name: "Diazepam"
+    description: "Utilizado para tratar la ansiedad, el síndrome de abstinencia y los espasmos musculares."
+
+- model: medications.chemicalcompound
+  pk: 8
+  fields:
+    name: "Clonazepam"
+    description: "Utilizado para tratar el trastorno de pánico y los ataques de epilepsia."
+
+- model: medications.chemicalcompound
+  pk: 9
+  fields:
+    name: "Metformina"
+    description: "Utilizado para controlar el nivel de azúcar en sangre en pacientes con diabetes tipo 2."
+
+- model: medications.chemicalcompound
+  pk: 10
+  fields:
+    name: "Lisinopril"
+    description: "Un inhibidor de la ECA utilizado para tratar la hipertensión y la insuficiencia cardíaca."
+
+- model: medications.chemicalcompound
+  pk: 11
+  fields:
+    name: "Simvastatina"
+    description: "Utilizado para reducir el colesterol y prevenir enfermedades cardíacas."
+
+- model: medications.chemicalcompound
+  pk: 12
+  fields:
+    name: "Atorvastatina"
+    description: "Utilizado para reducir el colesterol y el riesgo de enfermedad cardíaca."
+
+- model: medications.chemicalcompound
+  pk: 13
+  fields:
+    name: "Losartán"
+    description: "Un antagonista de los receptores de angiotensina II utilizado para tratar la hipertensión."
+
+- model: medications.chemicalcompound
+  pk: 14
+  fields:
+    name: "Amlodipino"
+    description: "Un bloqueador de los canales de calcio utilizado para tratar la hipertensión y la angina."
+
+- model: medications.chemicalcompound
+  pk: 15
+  fields:
+    name: "Hidroclorotiazida"
+    description: "Un diurético utilizado para tratar la hipertensión y el edema."
+
+- model: medications.chemicalcompound
+  pk: 16
+  fields:
+    name: "Gliburida"
+    description: "Utilizado para controlar los niveles de azúcar en sangre en pacientes con diabetes tipo 2."
+
+- model: medications.chemicalcompound
+  pk: 17
+  fields:
+    name: "Glipizida"
+    description: "Medicamento para el tratamiento de la diabetes tipo 2."
+
+- model: medications.chemicalcompound
+  pk: 18
+  fields:
+    name: "Gliclazida"
+    description: "Utilizado para controlar el azúcar en sangre en diabetes tipo 2."
+
+- model: medications.chemicalcompound
+  pk: 19
+  fields:
+    name: "Pioglitazona"
+    description: "Utilizado para mejorar la sensibilidad a la insulina en pacientes con diabetes tipo 2."
+
+- model: medications.chemicalcompound
+  pk: 20
+  fields:
+    name: "Rosiglitazona"
+    description: "Usado para tratar la diabetes tipo 2 al mejorar la sensibilidad a la insulina."
+
+- model: medications.chemicalcompound
+  pk: 21
+  fields:
+    name: "Sitagliptina"
+    description: "Inhibidor de la DPP-4 utilizado para el tratamiento de la diabetes tipo 2."
+
+- model: medications.chemicalcompound
+  pk: 22
+  fields:
+    name: "Saxagliptina"
+    description: "Utilizado para mejorar el control de azúcar en sangre en la diabetes tipo 2."
+
+- model: medications.chemicalcompound
+  pk: 23
+  fields:
+    name: "Linagliptina"
+    description: "Inhibidor de la DPP-4 utilizado para controlar el azúcar en sangre."
+
+- model: medications.chemicalcompound
+  pk: 24
+  fields:
+    name: "Empagliflozina"
+    description: "Inhibidor del SGLT2 utilizado para tratar la diabetes tipo 2."
+
+- model: medications.chemicalcompound
+  pk: 25
+  fields:
+    name: "Dapagliflozina"
+    description: "Utilizado para controlar los niveles de azúcar en sangre en diabetes tipo 2."
+
+- model: medications.chemicalcompound
+  pk: 26
+  fields:
+    name: "Canagliflozina"
+    description: "Inhibidor del SGLT2 utilizado para tratar la diabetes tipo 2."
+
+- model: medications.chemicalcompound
+  pk: 27
+  fields:
+    name: "Insulina"
+    description: "Hormona utilizada para controlar los niveles de azúcar en sangre en diabetes."
+
+- model: medications.chemicalcompound
+  pk: 28
+  fields:
+    name: "Insulina Aspart"
+    description: "Insulina de acción rápida utilizada para controlar el azúcar en sangre."
+
+- model: medications.chemicalcompound
+  pk: 29
+  fields:
+    name: "Insulina Glargina"
+    description: "Insulina de acción prolongada utilizada para el control de la diabetes."
+
+- model: medications.chemicalcompound
+  pk: 30
+  fields:
+    name: "Insulina Lispro"
+    description: "Insulina de acción rápida utilizada para el tratamiento de la diabetes."
+
+- model: medications.chemicalcompound
+  pk: 31
+  fields:
+    name: "Levotiroxina"
+    description: "Utilizado para tratar el hipotiroidismo."
+
+- model: medications.chemicalcompound
+  pk: 32
+  fields:
+    name: "Metimazol"
+    description: "Utilizado para tratar el hipertiroidismo."
+
+- model: medications.chemicalcompound
+  pk: 33
+  fields:
+    name: "Propiltiouracilo"
+    description: "Utilizado para tratar el hipertiroidismo."
+
+- model: medications.chemicalcompound
+  pk: 34
+  fields:
+    name: "Prednisona"
+    description: "Un corticosteroide utilizado para tratar la inflamación y el sistema inmune."
+
+- model: medications.chemicalcompound
+  pk: 35
+  fields:
+    name: "Hidrocortisona"
+    description: "Corticosteroide utilizado para reducir la inflamación y tratar el sistema inmune."
+
+- model: medications.chemicalcompound
+  pk: 36
+  fields:
+    name: "Dexametasona"
+    description: "Corticosteroide utilizado para reducir la inflamación y tratar diversas condiciones médicas."
+
+- model: medications.chemicalcompound
+  pk: 37
+  fields:
+    name: "Fluticasona"
+    description: "Corticosteroide utilizado para tratar el asma y otras condiciones inflamatorias."
+
+- model: medications.chemicalcompound
+  pk: 38
+  fields:
+    name: "Budesonida"
+    description: "Utilizado para el tratamiento del asma y la rinitis alérgica."
+
+- model: medications.chemicalcompound
+  pk: 39
+  fields:
+    name: "Montelukast"
+    description: "Utilizado para el tratamiento del asma y la rinitis alérgica."
+
+- model: medications.chemicalcompound
+  pk: 40
+  fields:
+    name: "Zafirlukast"
+    description: "Antagonista de los receptores de leucotrienos utilizado para tratar el asma."
+
+- model: medications.chemicalcompound
+  pk: 41
+  fields:
+    name: "Teofilina"
+    description: "Utilizado para tratar el asma y la enfermedad pulmonar obstructiva crónica (EPOC)."
+
+- model: medications.chemicalcompound
+  pk: 42
+  fields:
+    name: "Albuterol"
+    description: "Broncodilatador utilizado para aliviar los síntomas del asma y la EPOC."
+
+- model: medications.chemicalcompound
+  pk: 43
+  fields:
+    name: "Salmeterol"
+    description: "Broncodilatador utilizado para el tratamiento del asma y la EPOC."
+
+- model: medications.chemicalcompound
+  pk: 44
+  fields:
+    name: "Ipratropio"
+    description: "Utilizado para tratar la EPOC y el asma al relajar las vías respiratorias."
+
+- model: medications.chemicalcompound
+  pk: 45
+  fields:
+    name: "Tiotropio"
+    description: "Broncodilatador utilizado para tratar la EPOC."
+
+- model: medications.chemicalcompound
+  pk: 46
+  fields:
+    name: "Furosemida"
+    description: "Un diurético utilizado para tratar la hipertensión y el edema."
+
+- model: medications.chemicalcompound
+  pk: 47
+  fields:
+    name: "Espironolactona"
+    description: "Diurético ahorrador de potasio utilizado para tratar la hipertensión y el edema."
+
+- model: medications.chemicalcompound
+  pk: 48
+  fields:
+    name: "Eplerenona"
+    description: "Diurético ahorrador de potasio utilizado para tratar la hipertensión y la insuficiencia cardíaca."
+
+- model: medications.chemicalcompound
+  pk: 49
+  fields:
+    name: "Clortalidona"
+    description: "Diurético utilizado para el tratamiento de la hipertensión y el edema."
+
+- model: medications.chemicalcompound
+  pk: 50
+  fields:
+    name: "Indapamida"
+    description: "Diurético utilizado para tratar la hipertensión y la insuficiencia cardíaca."
+
+- model: medications.chemicalcompound
+  pk: 51
+  fields:
+    name: "Doxazosina"
+    description: "Antagonista alfa-1 utilizado para tratar la hipertensión y los síntomas de hiperplasia prostática benigna."
+
+- model: medications.chemicalcompound
+  pk: 52
+  fields:
+    name: "Terazosina"
+    description: "Utilizado para tratar la hipertensión y la hiperplasia prostática benigna."
+
+- model: medications.chemicalcompound
+  pk: 53
+  fields:
+    name: "Prazosina"
+    description: "Antagonista alfa-1 utilizado para tratar la hipertensión y el síndrome de estrés postraumático."
+
+- model: medications.chemicalcompound
+  pk: 54
+  fields:
+    name: "Minoxidil"
+    description: "Utilizado para tratar la hipertensión resistente y la pérdida de cabello."
+
+- model: medications.chemicalcompound
+  pk: 55
+  fields:
+    name: "Nitroglicerina"
+    description: "Utilizado para tratar la angina de pecho al dilatar los vasos sanguíneos."
+
+- model: medications.chemicalcompound
+  pk: 56
+  fields:
+    name: "Mononitrato de Isosorbide"
+    description: "Utilizado para prevenir la angina de pecho al dilatar los vasos sanguíneos."
+
+- model: medications.chemicalcompound
+  pk: 57
+  fields:
+    name: "Hidralazina"
+    description: "Vasodilatador utilizado para tratar la hipertensión."
+
+- model: medications.chemicalcompound
+  pk: 58
+  fields:
+    name: "Procainamida"
+    description: "Utilizado para tratar las arritmias cardíacas."
+
+- model: medications.chemicalcompound
+  pk: 59
+  fields:
+    name: "Lidocaína"
+    description: "Utilizado como anestésico local y para tratar arritmias cardíacas."
+
+- model: medications.chemicalcompound
+  pk: 60
+  fields:
+    name: "Quinidina"
+    description: "Utilizado para tratar las arritmias cardíacas."
+
+- model: medications.chemicalcompound
+  pk: 61
+  fields:
+    name: "Amiodarona"
+    description: "Utilizado para tratar y prevenir las arritmias cardíacas."
+
+- model: medications.chemicalcompound
+  pk: 62
+  fields:
+    name: "Sotalol"
+    description: "Utilizado para tratar arritmias cardíacas."
+
+- model: medications.chemicalcompound
+  pk: 63
+  fields:
+    name: "Diltiazem"
+    description: "Bloqueador de los canales de calcio utilizado para tratar la hipertensión y las arritmias."
+
+- model: medications.chemicalcompound
+  pk: 64
+  fields:
+    name: "Verapamilo"
+    description: "Bloqueador de los canales de calcio utilizado para la hipertensión y las arritmias cardíacas."
+
+- model: medications.chemicalcompound
+  pk: 65
+  fields:
+    name: "Nifedipino"
+    description: "Bloqueador de los canales de calcio utilizado para tratar la hipertensión y la angina."
+
+- model: medications.chemicalcompound
+  pk: 66
+  fields:
+    name: "Atenolol"
+    description: "Beta-bloqueador utilizado para tratar la hipertensión y la angina."
+
+- model: medications.chemicalcompound
+  pk: 67
+  fields:
+    name: "Metoprolol"
+    description: "Beta-bloqueador utilizado para la hipertensión y la insuficiencia cardíaca."
+
+- model: medications.chemicalcompound
+  pk: 68
+  fields:
+    name: "Carvedilol"
+    description: "Beta-bloqueador utilizado para tratar la insuficiencia cardíaca y la hipertensión."
+
+- model: medications.chemicalcompound
+  pk: 69
+  fields:
+    name: "Propranolol"
+    description: "Beta-bloqueador utilizado para la hipertensión y la ansiedad."
+
+- model: medications.chemicalcompound
+  pk: 70
+  fields:
+    name: "Clonidina"
+    description: "Utilizado para tratar la hipertensión y el trastorno de déficit de atención e hiperactividad."
+
+- model: medications.chemicalcompound
+  pk: 71
+  fields:
+    name: "Metildopa"
+    description: "Utilizado para tratar la hipertensión."
+
+- model: medications.chemicalcompound
+  pk: 72
+  fields:
+    name: "Alpha-Metildopa"
+    description: "Utilizado para tratar la hipertensión."
+
+- model: medications.chemicalcompound
+  pk: 73
+  fields:
+    name: "Ranitidina"
+    description: "Utilizado para tratar úlceras y reflujo ácido."
+
+- model: medications.chemicalcompound
+  pk: 74
+  fields:
+    name: "Famotidina"
+    description: "Utilizado para tratar úlceras y reflujo ácido."
+
+- model: medications.chemicalcompound
+  pk: 75
+  fields:
+    name: "Omeprazol"
+    description: "Inhibidor de la bomba de protones utilizado para tratar úlceras y reflujo ácido."
+
+- model: medications.chemicalcompound
+  pk: 76
+  fields:
+    name: "Esomeprazol"
+    description: "Inhibidor de la bomba de protones utilizado para tratar úlceras y reflujo ácido."
+
+- model: medications.chemicalcompound
+  pk: 77
+  fields:
+    name: "Lansoprazol"
+    description: "Inhibidor de la bomba de protones utilizado para tratar úlceras y reflujo ácido."
+
+- model: medications.chemicalcompound
+  pk: 78
+  fields:
+    name: "Pantoprazol"
+    description: "Inhibidor de la bomba de protones utilizado para tratar úlceras y reflujo ácido."
+
+- model: medications.chemicalcompound
+  pk: 79
+  fields:
+    name: "Sucralfato"
+    description: "Utilizado para tratar úlceras gástricas y duodenales."
+
+- model: medications.chemicalcompound
+  pk: 80
+  fields:
+    name: "Subsalicilato de Bismuto"
+    description: "Utilizado para tratar la diarrea y el malestar estomacal."
+
+- model: medications.chemicalcompound
+  pk: 81
+  fields:
+    name: "Bicarbonato de Sodio"
+    description: "Utilizado para tratar la acidosis metabólica y la indigestión."
+
+- model: medications.chemicalcompound
+  pk: 82
+  fields:
+    name: "Carbonato de Calcio"
+    description: "Utilizado como suplemento de calcio y antiácido."
+
+- model: medications.chemicalcompound
+  pk: 83
+  fields:
+    name: "Hidróxido de Magnesio"
+    description: "Utilizado como antiácido y laxante."
+
+- model: medications.chemicalcompound
+  pk: 84
+  fields:
+    name: "Polietilenglicol"
+    description: "Utilizado como laxante para aliviar el estreñimiento."
+
+- model: medications.chemicalcompound
+  pk: 85
+  fields:
+    name: "Bisacodilo"
+    description: "Utilizado como laxante para el tratamiento del estreñimiento."
+
+- model: medications.chemicalcompound
+  pk: 86
+  fields:
+    name: "Docusato Sódico"
+    description: "Utilizado para suavizar las heces y aliviar el estreñimiento."
+
+- model: medications.chemicalcompound
+  pk: 87
+  fields:
+    name: "Lactulosa"
+    description: "Utilizado para tratar el estreñimiento y la encefalopatía hepática."
+
+- model: medications.chemicalcompound
+  pk: 88
+  fields:
+    name: "Senósidos"
+    description: "Utilizado como laxante para tratar el estreñimiento."
+
+- model: medications.chemicalcompound
+  pk: 89
+  fields:
+    name: "Rifampicina"
+    description: "Antibiótico utilizado para tratar la tuberculosis y otras infecciones bacterianas."
+
+- model: medications.chemicalcompound
+  pk: 90
+  fields:
+    name: "Isoniazida"
+    description: "Antibiótico utilizado para tratar la tuberculosis."
+
+- model: medications.chemicalcompound
+  pk: 91
+  fields:
+    name: "Etambutol"
+    description: "Utilizado en combinación con otros medicamentos para tratar la tuberculosis."
+
+- model: medications.chemicalcompound
+  pk: 92
+  fields:
+    name: "Pirazinamida"
+    description: "Utilizado para tratar la tuberculosis en combinación con otros antibióticos."
+
+- model: medications.chemicalcompound
+  pk: 93
+  fields:
+    name: "Azitromicina"
+    description: "Antibiótico utilizado para tratar diversas infecciones bacterianas."
+
+- model: medications.chemicalcompound
+  pk: 94
+  fields:
+    name: "Claritromicina"
+    description: "Antibiótico utilizado para tratar infecciones respiratorias y otros tipos de infecciones."
+
+- model: medications.chemicalcompound
+  pk: 95
+  fields:
+    name: "Amoxicilina"
+    description: "Antibiótico utilizado para tratar una variedad de infecciones bacterianas."
+
+- model: medications.chemicalcompound
+  pk: 96
+  fields:
+    name: "Penicilina"
+    description: "Antibiótico utilizado para tratar infecciones bacterianas."
+
+- model: medications.chemicalcompound
+  pk: 97
+  fields:
+    name: "Cefalexina"
+    description: "Antibiótico utilizado para tratar infecciones bacterianas."
+
+- model: medications.chemicalcompound
+  pk: 98
+  fields:
+    name: "Ciprofloxacina"
+    description: "Antibiótico utilizado para tratar una variedad de infecciones bacterianas."
+
+- model: medications.chemicalcompound
+  pk: 99
+  fields:
+    name: "Levofloxacina"
+    description: "Antibiótico utilizado para tratar infecciones respiratorias, urinarias y otras infecciones bacterianas."
+
+- model: medications.chemicalcompound
+  pk: 100
+  fields:
+    name: "Vancomicina"
+    description: "Antibiótico utilizado para tratar infecciones graves causadas por bacterias resistentes a otros antibióticos."
