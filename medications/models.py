@@ -54,8 +54,10 @@ class MedicationsChemicalCompound(models.Model):
     """
     Modelo de datos para los compuestos químicos de los medicamentos.
     """
-    name = models.CharField(max_length=100, unique=True, verbose_name=_("Nombre"))
-    description = models.TextField(blank=True, null=True, verbose_name=_("Descripción"))
+    name = models.CharField(max_length=100, unique=True,
+                            verbose_name=_("Nombre"))
+    description = models.TextField(
+        blank=True, null=True, verbose_name=_("Descripción"))
 
     def __str__(self):
         return self.name
