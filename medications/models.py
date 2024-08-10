@@ -19,21 +19,7 @@ class Category(models.Model):
         verbose_name = _("Categoría")
         verbose_name_plural = _("Categorías")
 
-
-class MedicationPresentation(models.Model):
-    name = models.CharField(_("Nombre"), max_length=100, unique=True)
-
-    def __str__(self):
-        return self.name
-
-    class Meta:
-        ordering = ["name"]
-        verbose_name = _("Presentación")
-        verbose_name_plural = _("Presentaciones")
-        verbose_name
-
-
-class MedicationPresentation(models.Model):
+class MedicationsPresentation(models.Model):
     """
     Modelo de datos para las presentaciones de los medicamentos.
     """
@@ -48,7 +34,7 @@ class MedicationPresentation(models.Model):
         verbose_name_plural = _("Presentaciones")
 
 
-class Manufacturer(models.Model):
+class MedicationsManufacturer(models.Model):
     """
     Modelo de datos para los fabricantes de medicamentos.
     """
@@ -97,9 +83,9 @@ class Medication(models.Model):
     categories = models.ManyToManyField(
         'Category', related_name='medications', verbose_name=_("Categorías"), blank=False)
     presentation = models.ManyToManyField(
-        'MedicationPresentation', verbose_name=_("Presentación"), blank=False)
+        'MedicationsPresentation', verbose_name=_("Presentación"), blank=False)
     manufacturer = models.ManyToManyField(
-        'Manufacturer', verbose_name=_("Fabricante"), blank=False)
+        'MedicationsManufacturer', verbose_name=_("Fabricante"), blank=False)
 
     def __str__(self):
         return self.name
