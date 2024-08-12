@@ -75,9 +75,12 @@ class MedicationsContraindications(models.Model):
     def __str__(self):
         return self.name
 
+
 class MedicationsUnitOfMeasure(models.Model):
-    name = models.CharField(max_length=50, unique=True, verbose_name=_("Unidad de Medida"))
-    short_name = models.CharField(max_length=10, unique=True, verbose_name=_("Abreviatura"))
+    name = models.CharField(max_length=50, unique=True,
+                            verbose_name=_("Unidad de Medida"))
+    short_name = models.CharField(
+        max_length=10, unique=True, verbose_name=_("Abreviatura"))
 
     def __str__(self):
         return self.name
@@ -103,8 +106,8 @@ class Medication(models.Model):
         "Fecha de vencimiento"), null=False, blank=False)
     stock = models.CharField(verbose_name=_(
         "Inventario"), null=False, blank=False, max_length=255)
-    unit = models.CharField(max_length=100, verbose_name=_(
-        "Unidad de Medida"), null=False, blank=False)
+    unit = models.ForeignKey(
+        'MedicationsUnitOfMeasure', on_delete=models.PROTECT, verbose_name=_("Unidad de Medida"))
     recommended_dosage = models.CharField(
         max_length=255, blank=True, null=True, verbose_name=_("Dosis Recomendada"), default='La que indique el médico')
     indications = models.TextField(
