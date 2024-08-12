@@ -1,9 +1,0 @@
-- model: medications.manofacturer
-  pk: 1
-  fields:
-    name: Liomont
-- model: medications.manofacturer
-  pk: 2
-  fields:
-    name: Laboratorios PHARA
-- 
