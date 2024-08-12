@@ -75,6 +75,18 @@ class MedicationsContraindications(models.Model):
     def __str__(self):
         return self.name
 
+class MedicationsUnitOfMeasure(models.Model):
+    name = models.CharField(max_length=50, unique=True, verbose_name=_("Unidad de Medida"))
+    short_name = models.CharField(max_length=10, unique=True, verbose_name=_("Abreviatura"))
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        ordering = ["name"]
+        verbose_name = _("Unidad de Medida")
+        verbose_name_plural = _("Unidades de Medida")
+
 
 class Medication(models.Model):
     """

@@ -1,0 +1,299 @@
+- model: medications.medicationsunitofmeasure
+  pk: 1
+  fields:
+    name: "Mililitro"
+    short_name: "ml"
+
+- model: medications.medicationsunitofmeasure
+  pk: 2
+  fields:
+    name: "Gramo"
+    short_name: "g"
+
+- model: medications.medicationsunitofmeasure
+  pk: 3
+  fields:
+    name: "Centímetro cúbico"
+    short_name: "cc"
+
+- model: medications.medicationsunitofmeasure
+  pk: 4
+  fields:
+    name: "Litro"
+    short_name: "l"
+
+- model: medications.medicationsunitofmeasure
+  pk: 5
+  fields:
+    name: "Píldora"
+    short_name: "p"
+
+- model: medications.medicationsunitofmeasure
+  pk: 6
+  fields:
+    name: "Tableta"
+    short_name: "t"
+
+- model: medications.medicationsunitofmeasure
+  pk: 7
+  fields:
+    name: "Capsula"
+    short_name: "c"
+
+- model: medications.medicationsunitofmeasure
+  pk: 8
+  fields:
+    name: "Gránulo"
+    short_name: "gr"
+
+- model: medications.medicationsunitofmeasure
+  pk: 9
+  fields:
+    name: "Miligramo"
+    short_name: "mg"
+
+- model: medications.medicationsunitofmeasure
+  pk: 10
+  fields:
+    name: "Microgramo"
+    short_name: "µg"
+
+- model: medications.medicationsunitofmeasure
+  pk: 11
+  fields:
+    name: "Unidad"
+    short_name: "u"
+
+- model: medications.medicationsunitofmeasure
+  pk: 12
+  fields:
+    name: "Milígramo por mililitro"
+    short_name: "mg/ml"
+
+- model: medications.medicationsunitofmeasure
+  pk: 13
+  fields:
+    name: "Gramo por litro"
+    short_name: "g/l"
+
+- model: medications.medicationsunitofmeasure
+  pk: 14
+  fields:
+    name: "Cucharadita"
+    short_name: "cdt"
+
+- model: medications.medicationsunitofmeasure
+  pk: 15
+  fields:
+    name: "Cucharada"
+    short_name: "cd"
+
+- model: medications.medicationsunitofmeasure
+  pk: 16
+  fields:
+    name: "Mililitro por minuto"
+    short_name: "ml/min"
+
+- model: medications.medicationsunitofmeasure
+  pk: 17
+  fields:
+    name: "Gramo por minuto"
+    short_name: "g/min"
+
+- model: medications.medicationsunitofmeasure
+  pk: 18
+  fields:
+    name: "Milígramo por hora"
+    short_name: "mg/h"
+
+- model: medications.medicationsunitofmeasure
+  pk: 19
+  fields:
+    name: "Centímetro"
+    short_name: "cm"
+
+- model: medications.medicationsunitofmeasure
+  pk: 20
+  fields:
+    name: "Milígramo por centímetro cúbico"
+    short_name: "mg/cc"
+
+- model: medications.medicationsunitofmeasure
+  pk: 21
+  fields:
+    name: "Milígramo por gramo"
+    short_name: "mg/g"
+
+- model: medications.medicationsunitofmeasure
+  pk: 22
+  fields:
+    name: "Unidad internacional"
+    short_name: "UI"
+
+- model: medications.medicationsunitofmeasure
+  pk: 23
+  fields:
+    name: "Gramo por mililitro"
+    short_name: "g/ml"
+
+- model: medications.medicationsunitofmeasure
+  pk: 24
+  fields:
+    name: "Nanogramo"
+    short_name: "ng"
+
+- model: medications.medicationsunitofmeasure
+  pk: 25
+  fields:
+    name: "Picogramo"
+    short_name: "pg"
+
+- model: medications.medicationsunitofmeasure
+  pk: 26
+  fields:
+    name: "Mililitro por hora"
+    short_name: "ml/h"
+
+- model: medications.medicationsunitofmeasure
+  pk: 27
+  fields:
+    name: "Gramo por hora"
+    short_name: "g/h"
+
+- model: medications.medicationsunitofmeasure
+  pk: 28
+  fields:
+    name: "Unidad por mililitro"
+    short_name: "u/ml"
+
+- model: medications.medicationsunitofmeasure
+  pk: 29
+  fields:
+    name: "Unidad por gramo"
+    short_name: "u/g"
+
+- model: medications.medicationsunitofmeasure
+  pk: 30
+  fields:
+    name: "Mililitro por gramo"
+    short_name: "ml/g"
+
+- model: medications.medicationsunitofmeasure
+  pk: 31
+  fields:
+    name: "Gramo por centímetro cúbico"
+    short_name: "g/cc"
+
+- model: medications.medicationsunitofmeasure
+  pk: 32
+  fields:
+    name: "Milígramo por centímetro"
+    short_name: "mg/cm"
+
+- model: medications.medicationsunitofmeasure
+  pk: 33
+  fields:
+    name: "Milígramo por litro"
+    short_name: "mg/l"
+
+- model: medications.medicationsunitofmeasure
+  pk: 34
+  fields:
+    name: "Mililitro por día"
+    short_name: "ml/día"
+
+- model: medications.medicationsunitofmeasure
+  pk: 35
+  fields:
+    name: "Gramo por día"
+    short_name: "g/día"
+
+- model: medications.medicationsunitofmeasure
+  pk: 36
+  fields:
+    name: "Unidad por día"
+    short_name: "u/día"
+
+- model: medications.medicationsunitofmeasure
+  pk: 37
+  fields:
+    name: "Mililitro por semana"
+    short_name: "ml/sem"
+
+- model: medications.medicationsunitofmeasure
+  pk: 38
+  fields:
+    name: "Gramo por semana"
+    short_name: "g/sem"
+
+- model: medications.medicationsunitofmeasure
+  pk: 39
+  fields:
+    name: "Unidad por semana"
+    short_name: "u/sem"
+
+- model: medications.medicationsunitofmeasure
+  pk: 40
+  fields:
+    name: "Mililitro por mes"
+    short_name: "ml/mes"
+
+- model: medications.medicationsunitofmeasure
+  pk: 41
+  fields:
+    name: "Gramo por mes"
+    short_name: "g/mes"
+
+- model: medications.medicationsunitofmeasure
+  pk: 42
+  fields:
+    name: "Unidad por mes"
+    short_name: "u/mes"
+
+- model: medications.medicationsunitofmeasure
+  pk: 43
+  fields:
+    name: "Mililitro por año"
+    short_name: "ml/año"
+
+- model: medications.medicationsunitofmeasure
+  pk: 44
+  fields:
+    name: "Gramo por año"
+    short_name: "g/año"
+
+- model: medications.medicationsunitofmeasure
+  pk: 45
+  fields:
+    name: "Unidad por año"
+    short_name: "u/año"
+
+- model: medications.medicationsunitofmeasure
+  pk: 46
+  fields:
+    name: "Mililitro por dosis"
+    short_name: "ml/dosis"
+
+- model: medications.medicationsunitofmeasure
+  pk: 47
+  fields:
+    name: "Gramo por dosis"
+    short_name: "g/dosis"
+
+- model: medications.medicationsunitofmeasure
+  pk: 48
+  fields:
+    name: "Unidad por dosis"
+    short_name: "u/dosis"
+
+- model: medications.medicationsunitofmeasure
+  pk: 49
+  fields:
+    name: "Gramo por centímetro"
+    short_name: "g/cm"
+
+- model: medications.medicationsunitofmeasure
+  pk: 50
+  fields:
+    name: "Mililitro por centímetro"
+    short_name: "ml/cm"
