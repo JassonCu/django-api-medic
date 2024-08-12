@@ -1,0 +1,11 @@
+- model: bank.currency
+  pk: 1
+  fields:
+    code: GTQ
+    symbol: Q
+    name: Quetzal
+- model: bank.currency
+  pk: 2
+  fields:
+    code: USD
+    symbol: $
