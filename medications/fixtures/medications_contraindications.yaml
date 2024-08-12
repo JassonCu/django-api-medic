@@ -189,7 +189,7 @@
 - model: medications.medicationscontraindications
   pk: 48
   fields:
-    name: "Hipoglucemia severa"
+    name: "Otras"
 - model: medications.medicationscontraindications
   pk: 49
   fields:
