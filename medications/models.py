@@ -27,7 +27,7 @@ class MedicationsPresentation(models.Model):
     name = models.CharField(max_length=100, verbose_name=_("Nombre"))
 
     def __str__(self):
-        return self.name
+        return f'{self.name}'
 
     class Meta:
         ordering = ["name"]
@@ -68,7 +68,7 @@ class MedicationsChemicalCompound(models.Model):
         verbose_name_plural = _("Compuestos Químicos")
 
 
-class MedicationContraindications(models.Model):
+class MedicationsContraindications(models.Model):
     name = models.CharField(max_length=255, unique=True,
                             verbose_name=_("Nombre"), null=False, blank=False)
 
@@ -105,14 +105,14 @@ class Medication(models.Model):
         auto_now=True, verbose_name=_("Fecha de actualización"))
     categories = models.ManyToManyField(
         'Category', related_name='medications', verbose_name=_("Categorías"), blank=False)
-    presentation = models.ManyToManyField(
-        'MedicationsPresentation', verbose_name=_("Presentación"), blank=False)
+    presentation = models.ForeignKey(
+        'MedicationsPresentation', on_delete=models.CASCADE, verbose_name=_("Presentación"))
     manufacturer = models.ManyToManyField(
         'MedicationsManufacturer', verbose_name=_("Fabricante"), blank=False)
     chemical_compound = models.ManyToManyField(
-        'MedicationsChemicalCompound', null=False, blank=False, verbose_name=_("Compuesto Químico"))
+        'MedicationsChemicalCompound', blank=False, verbose_name=_("Compuesto Químico"))
     contraindications = models.ManyToManyField(
-        'MedicationContraindications', null=False, blank=False, verbose_name=_('Contraindicaciones'))
+        'MedicationsContraindications', blank=False, verbose_name=_('Contraindicaciones'))
 
     def __str__(self):
         return self.name
