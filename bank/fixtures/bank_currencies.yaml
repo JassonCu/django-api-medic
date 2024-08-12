@@ -9,3 +9,4 @@
   fields:
     code: USD
     symbol: $
+    name: Dollar

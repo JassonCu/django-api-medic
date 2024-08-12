@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 from django.utils import timezone
+from bank.models import Currency
 
 # Create your models here.
 
@@ -100,8 +101,9 @@ class Medication(models.Model):
     description = models.TextField(
         blank=False, null=False, verbose_name=_("Descripción"))
     price = models.DecimalField(
-        # cambiar a varchar
         max_digits=10, decimal_places=2, verbose_name=_("Precio"))
+    currency = models.ForeignKey(
+        Currency, on_delete=models.CASCADE, verbose_name=_("Moneda"), null=True, blank=True)
     expiration_date = models.DateField(verbose_name=_(
         "Fecha de vencimiento"), null=False, blank=False)
     stock = models.CharField(verbose_name=_(
