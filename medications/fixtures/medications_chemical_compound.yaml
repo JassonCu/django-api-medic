@@ -279,3 +279,9 @@
   fields:
     name: "Cromoglicato"
     description: "Utilizado para prevenir el asma al estabilizar las células cebadas."
+
+- model: medications.medicationschemicalcompound
+  pk: 48
+  fields:
+    name: "Loratadina"
+    description: "Indicado para el alivio sintomático de la tos con flemas y resfriado. También disuelve y facilita la expulsión de las flemas en procesos respiratorios alérgicos asociados con tos y expectoración, como son. rinitis alérgica complicada con sinusitis."

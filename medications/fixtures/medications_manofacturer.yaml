@@ -1,0 +1,232 @@
+- model: medications.medicationsmanufacturer
+  pk: 1
+  fields:
+    name: Liomont
+- model: medications.medicationsmanufacturer
+  pk: 2
+  fields:
+    name: Laboratorios PHARA
+- model: medications.medicationsmanufacturer
+  pk: 3
+  fields:
+    name: Megalabs
+- model: medications.medicationsmanufacturer
+  pk: 4
+  fields:
+    name: Takeda
+- model: medications.medicationsmanufacturer
+  pk: 5
+  fields:
+    name: PHARMA
+- model: medications.medicationsmanufacturer
+  pk: 6
+  fields:
+    name: Lancasco
+- model: medications.medicationsmanufacturer
+  pk: 7
+  fields:
+    name: Bonin
+- model: medications.medicationsmanufacturer
+  pk: 8
+  fields:
+    name: Med Pharma
+- model: medications.medicationsmanufacturer
+  pk: 9
+  fields:
+    name: Pharma
+- model: medications.medicationsmanufacturer
+  pk: 10
+  fields:
+    name: Global Farma
+- model: medications.medicationsmanufacturer
+  pk: 11
+  fields:
+    name: Ruipharma
+- model: medications.medicationsmanufacturer
+  pk: 12
+  fields:
+    name: Intecfa
+- model: medications.medicationsmanufacturer
+  pk: 13
+  fields:
+    name: Laboratorios Andifar
+- model: medications.medicationsmanufacturer
+  pk: 14
+  fields:
+    name: Laboratorios Rowe
+- model: medications.medicationsmanufacturer
+  pk: 15
+  fields:
+    name: Laboratorios Mallén
+- model: medications.medicationsmanufacturer
+  pk: 16
+  fields:
+    name: Roemmers
+- model: medications.medicationsmanufacturer
+  pk: 17
+  fields:
+    name: Vizcaino
+- model: medications.medicationsmanufacturer
+  pk: 18
+  fields:
+    name: Qualipharm
+- model: medications.medicationsmanufacturer
+  pk: 19
+  fields:
+    name: Nielsen Pharma
+- model: medications.medicationsmanufacturer
+  pk: 20
+  fields:
+    name: Hessel
+- model: medications.medicationsmanufacturer
+  pk: 21
+  fields:
+    name: Wellco Corporation
+- model: medications.medicationsmanufacturer
+  pk: 22
+  fields:
+    name: PharmaDel
+- model: medications.medicationsmanufacturer
+  pk: 23
+  fields:
+    name: Farmex
+- model: medications.medicationsmanufacturer
+  pk: 24
+  fields:
+    name: Pharmoz
+- model: medications.medicationsmanufacturer
+  pk: 25
+  fields:
+    name: Heidelg Pharma
+- model: medications.medicationsmanufacturer
+  pk: 26
+  fields:
+    name: Winzeer
+- model: medications.medicationsmanufacturer
+  pk: 27
+  fields:
+    name: Pharland
+- model: medications.medicationsmanufacturer
+  pk: 28
+  fields:
+    name: Sanfer
+- model: medications.medicationsmanufacturer
+  pk: 29
+  fields:
+    name: Janssen
+- model: medications.medicationsmanufacturer
+  pk: 30
+  fields:
+    name: Vitabiotics
+- model: medications.medicationsmanufacturer
+  pk: 31
+  fields:
+    name: Pharmalat
+- model: medications.medicationsmanufacturer
+  pk: 32
+  fields:
+    name: Chinoin
+- model: medications.medicationsmanufacturer
+  pk: 33
+  fields:
+    name: Infasa
+- model: medications.medicationsmanufacturer
+  pk: 34
+  fields:
+    name: Infosa
+- model: medications.medicationsmanufacturer
+  pk: 35
+  fields:
+    name: Asafarma
+- model: medications.medicationsmanufacturer
+  pk: 36
+  fields:
+    name: Califarma
+- model: medications.medicationsmanufacturer
+  pk: 37
+  fields:
+    name: Troikaa
+- model: medications.medicationsmanufacturer
+  pk: 38
+  fields:
+    name: Trinomed
+- model: medications.medicationsmanufacturer
+  pk: 39
+  fields:
+    name: Trinomed Internacional
+- model: medications.medicationsmanufacturer
+  pk: 40
+  fields:
+    name: Benessi
+- model: medications.medicationsmanufacturer
+  pk: 41
+  fields:
+    name: Andifar
+- model: medications.medicationsmanufacturer
+  pk: 42
+  fields:
+    name: Cassará
+- model: medications.medicationsmanufacturer
+  pk: 43
+  fields:
+    name: Therfam
+- model: medications.medicationsmanufacturer
+  pk: 44
+  fields:
+    name: Mallen
+- model: medications.medicationsmanufacturer
+  pk: 45
+  fields:
+    name: Wellco
+- model: medications.medicationsmanufacturer
+  pk: 46
+  fields:
+    name: Paill
+- model: medications.medicationsmanufacturer
+  pk: 47
+  fields:
+    name: Soubeiran Chobet
+- model: medications.medicationsmanufacturer
+  pk: 48
+  fields:
+    name: Dioresearch
+- model: medications.medicationsmanufacturer
+  pk: 49
+  fields:
+    name: Cheminter
+- model: medications.medicationsmanufacturer
+  pk: 50
+  fields:
+    name: Balaxi
+- model: medications.medicationsmanufacturer
+  pk: 51
+  fields:
+    name: FR Medikal
+- model: medications.medicationsmanufacturer
+  pk: 52
+  fields:
+    name: Luveck
+- model: medications.medicationsmanufacturer
+  pk: 53
+  fields:
+    name: Lidmount
+- model: medications.medicationsmanufacturer
+  pk: 54
+  fields:
+    name: Asefarma
+- model: medications.medicationsmanufacturer
+  pk: 55
+  fields:
+    name: Neisen Pharma
+- model: medications.medicationsmanufacturer
+  pk: 56
+  fields:
+    name: Rowa
+- model: medications.medicationsmanufacturer
+  pk: 57
+  fields:
+    name: Aserfarma
+- model: medications.medicationsmanufacturer
+  pk: 58
+  fields:
+    name: Pharmaland
