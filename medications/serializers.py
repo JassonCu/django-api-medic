@@ -3,22 +3,21 @@ from .models import Medication, Category
 
 
 class MedicationSerializer(serializers.ModelSerializer):
-    """
-    Serializer para la entidad Medication
-    """
     manufacturer_names = serializers.SerializerMethodField()
+    currency_symbol = serializers.SerializerMethodField()  # Agregado
+
     class Meta:
         model = Medication
-        fields = fields = [
+        fields = [
             'id',
             'name',
             'description',
             'price',
             'currency',
+            'currency_symbol',
             'expiration_date',
             'stock',
             'unit',
-            #'unit_name',
             'recommended_dosage',
             'indications',
             'notes',
@@ -33,9 +32,12 @@ class MedicationSerializer(serializers.ModelSerializer):
         ]
 
     def get_manufacturer_names(self, obj):
-        # Obtiene los nombres de los fabricantes
         manufacturers = obj.manufacturer.all()
         return [manufacturer.name for manufacturer in manufacturers]
+
+    def get_currency_symbol(self, obj):
+        return obj.currency.symbol if obj.currency else ''
+
     
 class MedicationCategorySerializer(serializers.ModelSerializer):
     """

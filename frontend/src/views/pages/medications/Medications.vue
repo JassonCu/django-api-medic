@@ -29,6 +29,7 @@
                     <th class="text-uppercase">Fecha de expiración</th>
                     <th class="text-uppercase">Cantidad</th>
                     <th class="text-uppercase">Unidad de medida</th>
+                    <th class="text-uppercase">Precio</th>
                 </tr>
             </thead>
             <tbody>
@@ -39,6 +40,7 @@
                     <td>{{ medicamento.expiration_date }}</td>
                     <td>{{ medicamento.stock }}</td>
                     <td>{{ medicamento.unit }}</td>
+                    <td>{{ formatPrice(medicamento.currency_symbol, medicamento.price) }}</td> <!-- Cambiado -->
                 </tr>
             </tbody>
         </VTable>
@@ -50,6 +52,7 @@ import { ref, onMounted } from 'vue';
 import axios from 'axios';
 import { VTable } from 'vuetify/lib/components/index.mjs';
 import { useRouter } from 'vue-router';
+import { log } from 'console';
 
 const router = useRouter();
 
@@ -60,6 +63,9 @@ interface Medicamento {
     expiration_date: string;
     stock: string;
     unit: string;
+    price: number
+    presentation: string
+    currency_symbol: string;
 }
 
 const headers = ref([
@@ -68,7 +74,9 @@ const headers = ref([
     { text: 'Casa', value: 'manufacturer_names' },
     { text: 'Fecha de expiración', value: 'expiration_date' },
     { text: 'Cantidad', value: 'stock' },
-    { text: 'Unidad de medida', value: 'unit' }
+    { text: 'Unidad de medida', value: 'unit' },
+    { text: 'Precio', value: 'price' },
+    { text: 'Presentación', value: 'medication_presentation' }
 ]);
 
 const medicamentos = ref<Medicamento[]>([]);
@@ -78,11 +86,25 @@ const showConfirmationDialog = ref(false);
 const fetchData = async () => {
     try {
         const response = await axios.get('http://localhost:8000/api/');
+        console.log(response.data);
+        
         medicamentos.value = response.data;
     } catch (error) {
         console.error('Error al obtener los medicamentos:', error);
     }
 };
+
+const formatPrice = (currencySymbol: string, price: string | number) => {
+  // Convertir el precio a un número si es una cadena
+  const numericPrice = typeof price === 'string' ? parseFloat(price) : price;
+
+  if (!isNaN(numericPrice)) {
+    return `${currencySymbol} ${numericPrice.toFixed(2)}`;
+  }
+
+  return '';
+};
+
 
 onMounted(() => {
     fetchData();
