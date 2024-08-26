@@ -5,6 +5,7 @@ from .models import Medication, Category
 class MedicationSerializer(serializers.ModelSerializer):
     manufacturer_names = serializers.SerializerMethodField()
     currency_symbol = serializers.SerializerMethodField()  # Agregado
+    unit_short_name = serializers.SerializerMethodField()
 
     class Meta:
         model = Medication
@@ -18,6 +19,7 @@ class MedicationSerializer(serializers.ModelSerializer):
             'expiration_date',
             'stock',
             'unit',
+            'unit_short_name',
             'recommended_dosage',
             'indications',
             'notes',
@@ -38,7 +40,9 @@ class MedicationSerializer(serializers.ModelSerializer):
     def get_currency_symbol(self, obj):
         return obj.currency.symbol if obj.currency else ''
 
-    
+    def get_unit_short_name(self, obj):
+        return obj.unit.short_name if obj.unit else ''
+
 class MedicationCategorySerializer(serializers.ModelSerializer):
     """
     Serializer para la entidad MedicationCategory

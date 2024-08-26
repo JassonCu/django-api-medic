@@ -39,7 +39,7 @@
                     <td>{{ medicamento.manufacturer_names.join(', ') }}</td>
                     <td>{{ medicamento.expiration_date }}</td>
                     <td>{{ medicamento.stock }}</td>
-                    <td>{{ medicamento.unit }}</td>
+                    <td>{{ medicamento.unit_short_name }}</td>
                     <td>{{ formatPrice(medicamento.currency_symbol, medicamento.price) }}</td> <!-- Cambiado -->
                 </tr>
             </tbody>
@@ -66,6 +66,7 @@ interface Medicamento {
     price: number
     presentation: string
     currency_symbol: string;
+    unit_short_name: string;
 }
 
 const headers = ref([
@@ -74,7 +75,7 @@ const headers = ref([
     { text: 'Casa', value: 'manufacturer_names' },
     { text: 'Fecha de expiración', value: 'expiration_date' },
     { text: 'Cantidad', value: 'stock' },
-    { text: 'Unidad de medida', value: 'unit' },
+    { text: 'Unidad de medida', value: 'unit_short_name' },
     { text: 'Precio', value: 'price' },
     { text: 'Presentación', value: 'medication_presentation' }
 ]);
