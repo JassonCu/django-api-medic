@@ -35,7 +35,7 @@
                 <tr v-for="medicamento in medicamentos" :key="medicamento.id">
                     <td>{{ medicamento.id }}</td>
                     <td>{{ medicamento.name }}</td>
-                    <td>{{ medicamento.manufacturer }}</td>
+                    <td>{{ medicamento.manufacturer_names.join(', ') }}</td>
                     <td>{{ medicamento.expiration_date }}</td>
                     <td>{{ medicamento.stock }}</td>
                     <td>{{ medicamento.unit }}</td>
@@ -56,7 +56,7 @@ const router = useRouter();
 interface Medicamento {
     id: number;
     name: string;
-    manufacturer: string;
+    manufacturer_names: string[];
     expiration_date: string;
     stock: string;
     unit: string;
@@ -65,7 +65,7 @@ interface Medicamento {
 const headers = ref([
     { text: 'ID', value: 'id' },
     { text: 'Nombre', value: 'name' },
-    { text: 'Casa', value: 'manufacturer' },
+    { text: 'Casa', value: 'manufacturer_names' },
     { text: 'Fecha de expiración', value: 'expiration_date' },
     { text: 'Cantidad', value: 'stock' },
     { text: 'Unidad de medida', value: 'unit' }
@@ -77,7 +77,7 @@ const showConfirmationDialog = ref(false);
 
 const fetchData = async () => {
     try {
-        const response = await axios.get('http://localhost:8000/api-v1.0/medications/');
+        const response = await axios.get('http://localhost:8000/api/');
         medicamentos.value = response.data;
     } catch (error) {
         console.error('Error al obtener los medicamentos:', error);
