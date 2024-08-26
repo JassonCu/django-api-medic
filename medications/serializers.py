@@ -1,11 +1,12 @@
 from rest_framework import serializers
-from .models import Medication, Category
+from .models import Medication, Category, MedicationsPresentation
 
 
 class MedicationSerializer(serializers.ModelSerializer):
     manufacturer_names = serializers.SerializerMethodField()
     currency_symbol = serializers.SerializerMethodField()  # Agregado
     unit_short_name = serializers.SerializerMethodField()
+    presentation_name = serializers.SerializerMethodField()
 
     class Meta:
         model = Medication
@@ -27,6 +28,7 @@ class MedicationSerializer(serializers.ModelSerializer):
             'updated_at',
             'categories',
             'presentation',
+            'presentation_name',
             'manufacturer',
             'manufacturer_names',
             'chemical_compound',
@@ -42,6 +44,9 @@ class MedicationSerializer(serializers.ModelSerializer):
 
     def get_unit_short_name(self, obj):
         return obj.unit.short_name if obj.unit else ''
+    
+    def get_presentation_name(self, obj):
+        return obj.presentation.name if obj.presentation else ''
 
 class MedicationCategorySerializer(serializers.ModelSerializer):
     """

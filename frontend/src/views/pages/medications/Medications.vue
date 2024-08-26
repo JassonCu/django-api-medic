@@ -38,7 +38,7 @@
                     <td>{{ medicamento.name }}</td>
                     <td>{{ medicamento.manufacturer_names.join(', ') }}</td>
                     <td>{{ medicamento.expiration_date }}</td>
-                    <td>{{ medicamento.stock }}</td>
+                    <td>{{ `${medicamento.stock} ${medicamento.presentation_name}` }}</td>
                     <td>{{ medicamento.unit_short_name }}</td>
                     <td>{{ formatPrice(medicamento.currency_symbol, medicamento.price) }}</td> <!-- Cambiado -->
                 </tr>
@@ -65,6 +65,7 @@ interface Medicamento {
     unit: string;
     price: number
     presentation: string
+    presentation_name: string;
     currency_symbol: string;
     unit_short_name: string;
 }
@@ -77,7 +78,8 @@ const headers = ref([
     { text: 'Cantidad', value: 'stock' },
     { text: 'Unidad de medida', value: 'unit_short_name' },
     { text: 'Precio', value: 'price' },
-    { text: 'Presentación', value: 'medication_presentation' }
+    { text: 'Presentación', value: 'medication_presentation' },
+    { text: 'Presentación', value: 'presentation_name' }
 ]);
 
 const medicamentos = ref<Medicamento[]>([]);
